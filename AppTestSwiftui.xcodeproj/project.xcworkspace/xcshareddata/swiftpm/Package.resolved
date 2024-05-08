@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "navigattie?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mijick/Navigattie?tab=readme-ov-file",
+      "state" : {
+        "revision" : "214a9fb96ee859216083b8f3bc59a0ba95f67449",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 2
+}
