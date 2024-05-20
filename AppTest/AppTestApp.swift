@@ -12,17 +12,18 @@ import MijickNavigattie
 struct AppTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .implementNavigationView(config: nil)
+            //ContentView()
+            NavigationLinke()
+              //  .implementNavigationView(config: nil)
                // .implementNavigationView(config: navigationConfig)
         }
     }
 }
 
-private extension AppTestApp {
-    var navigationConfig: NavigationGlobalConfig {
-        let config = NavigationGlobalConfig()
-        config.backgroundColour = .red
-        return config
-    }
-}
+//private extension AppTestApp {
+//    var navigationConfig: NavigationGlobalConfig {
+//        let config = NavigationGlobalConfig()
+//        config.backgroundColour = .red
+//        return config
+//    }
+//}

@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-import MijickNavigattie
 
-struct ContentView: NavigatableView {
+struct TamaraView: View {
     var body: some View {
         VStack{
             ZStack{
@@ -30,9 +29,9 @@ struct ContentView: NavigatableView {
 }
 
 #Preview {
-    ContentView()
-        .preferredColorScheme(.light)
-        .frame(width: 280, height: 350)
+    TamaraView()
+       // .preferredColorScheme(.dark)
+       // .frame(width: 280, height: 350)
         .padding()
 }
 

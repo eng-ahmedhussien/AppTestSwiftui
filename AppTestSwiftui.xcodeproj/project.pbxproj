@@ -10,12 +10,13 @@
 		6B15A49A2BDFA81500C95CEA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A4992BDFA81500C95CEA /* RoundedButton.swift */; };
 		6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */; };
 		6B15A49E2BDFB61900C95CEA /* LabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */; };
+		6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */; };
 		6B5AD29D2BA6D64300A1BEC7 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */; };
 		6B5AD2A02BA7206A00A1BEC7 /* MijickNavigattie in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5AD29F2BA7206A00A1BEC7 /* MijickNavigattie */; };
 		6B9F66B12BB2DD810092460A /* EnumOfShaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */; };
 		6B9FEBBB2BE1327000712E94 /* TamaraBurronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */; };
 		6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */; };
-		6BBD23AE2BA257EE008E8017 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AD2BA257EE008E8017 /* ContentView.swift */; };
+		6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AD2BA257EE008E8017 /* TamaraView.swift */; };
 		6BBD23B02BA257EF008E8017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD23AF2BA257EF008E8017 /* Assets.xcassets */; };
 		6BBD23B32BA257EF008E8017 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD23B22BA257EF008E8017 /* Preview Assets.xcassets */; };
 		6BBD23BD2BA257F0008E8017 /* AppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23BC2BA257F0008E8017 /* AppTestTests.swift */; };
@@ -23,6 +24,7 @@
 		6BBD23C92BA257F0008E8017 /* AppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */; };
 		6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D52BA25820008E8017 /* HtmlToText.swift */; };
 		6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */; };
+		6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +48,13 @@
 		6B15A4992BDFA81500C95CEA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTextView.swift; sourceTree = "<group>"; };
 		6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextView.swift; sourceTree = "<group>"; };
+		6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinke.swift; sourceTree = "<group>"; };
 		6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
 		6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOfShaps.swift; sourceTree = "<group>"; };
 		6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaraBurronView.swift; sourceTree = "<group>"; };
 		6BBD23A82BA257EE008E8017 /* AppTestSwiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestSwiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestApp.swift; sourceTree = "<group>"; };
-		6BBD23AD2BA257EE008E8017 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BBD23AD2BA257EE008E8017 /* TamaraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaraView.swift; sourceTree = "<group>"; };
 		6BBD23AF2BA257EF008E8017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BBD23B22BA257EF008E8017 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6BBD23B82BA257F0008E8017 /* AppTestSwiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTestSwiftuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +64,7 @@
 		6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6BBD23D52BA25820008E8017 /* HtmlToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlToText.swift; sourceTree = "<group>"; };
 		6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDwonList.swift; sourceTree = "<group>"; };
+		6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayoutSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,9 @@
 				6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */,
 				6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */,
 				6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */,
+				6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */,
+				6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */,
+				6BBD23AD2BA257EE008E8017 /* TamaraView.swift */,
 			);
 			path = Commponent;
 			sourceTree = "<group>";
@@ -129,7 +136,6 @@
 			children = (
 				6B9F66AF2BB2D58A0092460A /* Commponent */,
 				6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */,
-				6BBD23AD2BA257EE008E8017 /* ContentView.swift */,
 				6BBD23AF2BA257EF008E8017 /* Assets.xcassets */,
 				6BBD23B12BA257EF008E8017 /* Preview Content */,
 			);
@@ -300,7 +306,9 @@
 				6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */,
 				6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */,
 				6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */,
-				6BBD23AE2BA257EE008E8017 /* ContentView.swift in Sources */,
+				6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */,
+				6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */,
+				6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */,
 				6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */,
 				6B15A49A2BDFA81500C95CEA /* RoundedButton.swift in Sources */,
 				6B9FEBBB2BE1327000712E94 /* TamaraBurronView.swift in Sources */,
