@@ -25,6 +25,7 @@ struct NavigationLinke: View {
               Text("Details for item3")
           })
       }
+     
       .navigationDestination(for: MyData.self) { data in
         Text("Details for \(data.rawValue)")
       }
@@ -34,6 +35,9 @@ struct NavigationLinke: View {
       Button("Show Modal") {
         showDetails.toggle()
       }
+        Button("select") {
+            selectedItem = "asd"
+        }
       .navigationDestination(isPresented: $showDetails) {
         Text("This is a modal view")
       }
