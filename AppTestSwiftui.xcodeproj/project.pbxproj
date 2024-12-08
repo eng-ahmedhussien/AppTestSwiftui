@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B023A662C732B4700FA96B4 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B023A652C732B4700FA96B4 /* TimerPickerView.swift */; };
 		6B15A49A2BDFA81500C95CEA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A4992BDFA81500C95CEA /* RoundedButton.swift */; };
 		6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */; };
 		6B15A49E2BDFB61900C95CEA /* LabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */; };
 		6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */; };
 		6B5AD29D2BA6D64300A1BEC7 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */; };
 		6B5AD2A02BA7206A00A1BEC7 /* MijickNavigattie in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5AD29F2BA7206A00A1BEC7 /* MijickNavigattie */; };
+		6B5C12B62CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C12B52CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift */; };
+		6B5C12B82CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C12B72CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift */; };
+		6B5C12BA2CFEF87A00F74ED1 /* TransactionEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C12B92CFEF87A00F74ED1 /* TransactionEffects.swift */; };
+		6B5C12BC2D006A3500F74ED1 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C12BB2D006A3500F74ED1 /* TextView.swift */; };
+		6B699E3C2CE0DDA800146024 /* DropDownMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B699E3B2CE0DDA800146024 /* DropDownMenuListView.swift */; };
+		6B699E3E2CE20CFB00146024 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B699E3D2CE20CFB00146024 /* Grid.swift */; };
+		6B80804C2CE0B7E100670B7B /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80804B2CE0B7E100670B7B /* ImageCarousel.swift */; };
 		6B8564A12C63BAC4008A7B6D /* SelectableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8564A02C63BAC4008A7B6D /* SelectableList.swift */; };
 		6B9F66B12BB2DD810092460A /* EnumOfShaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */; };
-		6B9FEBBB2BE1327000712E94 /* TamaraBurronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */; };
 		6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */; };
 		6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AD2BA257EE008E8017 /* TamaraView.swift */; };
 		6BBD23B02BA257EF008E8017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD23AF2BA257EF008E8017 /* Assets.xcassets */; };
@@ -27,6 +34,9 @@
 		6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */; };
 		6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */; };
 		6BC1FB522C6E0DF600D32F27 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB512C6E0DF600D32F27 /* TapBar.swift */; };
+		6BC1FB542C6E289E00D32F27 /* SwiftuiLiveCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */; };
+		6BC3AE762CCAE3F3006F1DD0 /* peoductlabelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AE752CCAE3F3006F1DD0 /* peoductlabelsTest.swift */; };
+		6BC3AE782CCF7FD1006F1DD0 /* imageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AE772CCF7FD1006F1DD0 /* imageSize.swift */; };
 		6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,14 +58,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B023A652C732B4700FA96B4 /* TimerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
 		6B15A4992BDFA81500C95CEA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTextView.swift; sourceTree = "<group>"; };
 		6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextView.swift; sourceTree = "<group>"; };
 		6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinke.swift; sourceTree = "<group>"; };
 		6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
+		6B5C12B52CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappableView_usingOffcet.swift; sourceTree = "<group>"; };
+		6B5C12B72CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappableView_usingTransaction.swift; sourceTree = "<group>"; };
+		6B5C12B92CFEF87A00F74ED1 /* TransactionEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEffects.swift; sourceTree = "<group>"; };
+		6B5C12BB2D006A3500F74ED1 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		6B699E3B2CE0DDA800146024 /* DropDownMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuListView.swift; sourceTree = "<group>"; };
+		6B699E3D2CE20CFB00146024 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		6B80804B2CE0B7E100670B7B /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		6B8564A02C63BAC4008A7B6D /* SelectableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableList.swift; sourceTree = "<group>"; };
 		6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOfShaps.swift; sourceTree = "<group>"; };
-		6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaraBurronView.swift; sourceTree = "<group>"; };
 		6BBD23A82BA257EE008E8017 /* AppTestSwiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestSwiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestApp.swift; sourceTree = "<group>"; };
 		6BBD23AD2BA257EE008E8017 /* TamaraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaraView.swift; sourceTree = "<group>"; };
@@ -70,6 +87,9 @@
 		6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDwonList.swift; sourceTree = "<group>"; };
 		6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithCricleBackgroundView.swift; sourceTree = "<group>"; };
 		6BC1FB512C6E0DF600D32F27 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
+		6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiLiveCycle.swift; sourceTree = "<group>"; };
+		6BC3AE752CCAE3F3006F1DD0 /* peoductlabelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peoductlabelsTest.swift; sourceTree = "<group>"; };
+		6BC3AE772CCF7FD1006F1DD0 /* imageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSize.swift; sourceTree = "<group>"; };
 		6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayoutSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,23 +119,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5C12B42CFDFE9400F74ED1 /* SwappableView */ = {
+			isa = PBXGroup;
+			children = (
+				6B023A652C732B4700FA96B4 /* TimerPickerView.swift */,
+				6B5C12B52CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift */,
+				6B5C12B72CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift */,
+			);
+			path = SwappableView;
+			sourceTree = "<group>";
+		};
 		6B9F66AF2BB2D58A0092460A /* Commponent */ = {
 			isa = PBXGroup;
 			children = (
+				6B5C12B42CFDFE9400F74ED1 /* SwappableView */,
 				6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */,
+				6B699E3B2CE0DDA800146024 /* DropDownMenuListView.swift */,
 				6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */,
 				6BBD23D52BA25820008E8017 /* HtmlToText.swift */,
 				6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */,
 				6B15A4992BDFA81500C95CEA /* RoundedButton.swift */,
 				6B15A49B2BDFB59B00C95CEA /* QuantityTextView.swift */,
 				6B15A49D2BDFB61900C95CEA /* LabelTextView.swift */,
-				6B9FEBBA2BE1327000712E94 /* TamaraBurronView.swift */,
 				6BD62F5D2BF2405F001FEAAE /* SwiftUILayoutSystem.swift */,
 				6B42BEE62BFB4ADF00C570AF /* NavigationLinke.swift */,
 				6BBD23AD2BA257EE008E8017 /* TamaraView.swift */,
 				6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */,
 				6B8564A02C63BAC4008A7B6D /* SelectableList.swift */,
 				6BC1FB512C6E0DF600D32F27 /* TapBar.swift */,
+				6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */,
+				6BC3AE752CCAE3F3006F1DD0 /* peoductlabelsTest.swift */,
+				6BC3AE772CCF7FD1006F1DD0 /* imageSize.swift */,
+				6B80804B2CE0B7E100670B7B /* ImageCarousel.swift */,
+				6B5C12B92CFEF87A00F74ED1 /* TransactionEffects.swift */,
 			);
 			path = Commponent;
 			sourceTree = "<group>";
@@ -123,6 +159,7 @@
 		6BBD239F2BA257EE008E8017 = {
 			isa = PBXGroup;
 			children = (
+				6B5C12BB2D006A3500F74ED1 /* TextView.swift */,
 				6BBD23AA2BA257EE008E8017 /* AppTest */,
 				6BBD23BB2BA257F0008E8017 /* AppTestTests */,
 				6BBD23C52BA257F0008E8017 /* AppTestUITests */,
@@ -145,6 +182,7 @@
 			children = (
 				6B9F66AF2BB2D58A0092460A /* Commponent */,
 				6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */,
+				6B699E3D2CE20CFB00146024 /* Grid.swift */,
 				6BBD23AF2BA257EF008E8017 /* Assets.xcassets */,
 				6BBD23B12BA257EF008E8017 /* Preview Content */,
 			);
@@ -312,21 +350,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5C12B82CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift in Sources */,
 				6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */,
 				6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */,
 				6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */,
 				6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */,
 				6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */,
+				6B699E3E2CE20CFB00146024 /* Grid.swift in Sources */,
+				6B699E3C2CE0DDA800146024 /* DropDownMenuListView.swift in Sources */,
 				6B8564A12C63BAC4008A7B6D /* SelectableList.swift in Sources */,
+				6B5C12BA2CFEF87A00F74ED1 /* TransactionEffects.swift in Sources */,
 				6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */,
+				6B80804C2CE0B7E100670B7B /* ImageCarousel.swift in Sources */,
 				6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */,
+				6B023A662C732B4700FA96B4 /* TimerPickerView.swift in Sources */,
+				6B5C12BC2D006A3500F74ED1 /* TextView.swift in Sources */,
 				6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */,
 				6B15A49A2BDFA81500C95CEA /* RoundedButton.swift in Sources */,
-				6B9FEBBB2BE1327000712E94 /* TamaraBurronView.swift in Sources */,
 				6B5AD29D2BA6D64300A1BEC7 /* CollapsibleView.swift in Sources */,
+				6BC1FB542C6E289E00D32F27 /* SwiftuiLiveCycle.swift in Sources */,
 				6BC1FB522C6E0DF600D32F27 /* TapBar.swift in Sources */,
+				6BC3AE782CCF7FD1006F1DD0 /* imageSize.swift in Sources */,
+				6B5C12B62CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift in Sources */,
 				6B15A49E2BDFB61900C95CEA /* LabelTextView.swift in Sources */,
 				6B9F66B12BB2DD810092460A /* EnumOfShaps.swift in Sources */,
+				6BC3AE762CCAE3F3006F1DD0 /* peoductlabelsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

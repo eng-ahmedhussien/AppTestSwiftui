@@ -26,15 +26,14 @@ struct ContentView2: NavigatableView {
         TestSelectionModel(id: "4", name: "Four"),
         TestSelectionModel(id: "4", name: "Four")
     ])
-    
+   
     @State var se  = ""
     
     var body: some View {
-        VStack(spacing: 30) {
-            DropDwonList(data: $normalDropDownData, style: .default, selectionClouser: { selection in
-                // selection
-            })
-        }
+        DropDwonList(data: $normalDropDownData, style: .default, selectionClouser: { selection in
+            // selection
+            let  _ = print("\(normalDropDownData.selection?.name ?? "nill ")")
+        })
     }
 }
 
@@ -87,7 +86,6 @@ struct DropDwonList<T: SelectionProtocol>: View  {
                 .fill(styleConfig.buttonBackgroundColor)
                 .stroke(styleConfig.buttonStrokeColor, lineWidth: 1)
         )
-        .contentShape(Rectangle())
         .onTapGesture {
             isPicking.toggle()
         }
@@ -96,30 +94,26 @@ struct DropDwonList<T: SelectionProtocol>: View  {
             VStack {
                 if isPicking {
                     Spacer(minLength: styleConfig.buttonHeight)
-                    
                     ScrollView {
                         VStack(spacing: 0) {
                             ForEach(data.dataArray, id: \.self) { item in
-                               // Divider()
+                                //Divider()
                                 Button {
                                     data.selection = item
                                     selectionClouser(item)
                                     isPicking.toggle()
                                 } label: {
                                     Text(item.name ?? "test")
+                                        .foregroundColor(styleConfig.listItemTextColor)
                                         .lineLimit(1)
                                         .minimumScaleFactor(0.7)
                                         .frame(height: styleConfig.buttonHeight)
                                         .frame(maxWidth: .infinity, alignment: styleConfig.listItemTextAlingment)
-                                        .padding(.horizontal, 10)
                                         .background {
                                             RoundedRectangle(cornerRadius: styleConfig.buttonCornerRadius)
                                                 .fill(styleConfig.listItemBackgroundColor)
-                                                .padding(.horizontal, 8)
-                                                .padding(.bottom, 10)
-                                                .offset(y: 5)
                                         }
-                                        .foregroundColor(styleConfig.listItemTextColor)
+                                     
                                 }
                                 .buttonStyle(.plain)
                                 Divider()
@@ -147,6 +141,9 @@ struct DropDwonList<T: SelectionProtocol>: View  {
     }
 }
 
+
+
+
 protocol IdentifiableHashableCodable: Identifiable, Hashable, Codable {}
 protocol SelectionProtocol:  IdentifiableHashableCodable {
     var id: String? { get }
@@ -167,7 +164,6 @@ extension SelectionProtocol {
         }
     }
 }
-
 enum DropDownImageType {
     case systemImage
     case assetImage

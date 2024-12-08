@@ -13,7 +13,8 @@ struct AppTestApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            NavigationLinke()
+            //NavigationLinke()
+            ContentView5()
               //  .implementNavigationView(config: nil)
                // .implementNavigationView(config: navigationConfig)
         }

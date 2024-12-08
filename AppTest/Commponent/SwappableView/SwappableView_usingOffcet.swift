@@ -12,11 +12,11 @@ struct ContentView10: View {
     let sampleTextArray = ["😃😃 First", "Second", "Third", "Fourth"]
 
     var body: some View {
-        SwappableView(textArray: sampleTextArray)
+        SwappableView_usingOffcet(textArray: sampleTextArray)
     }
 }
 
-struct SwappableView: View {
+struct SwappableView_usingOffcet: View {
     let textArray: [String]
     @State private var currentIndex = 0
     @State private var isTextVisible = true
@@ -66,4 +66,3 @@ struct SwappableView: View {
 #Preview{
         ContentView10()
 }
-
