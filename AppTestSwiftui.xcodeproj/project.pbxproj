@@ -32,6 +32,8 @@
 		6BBD23C92BA257F0008E8017 /* AppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */; };
 		6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D52BA25820008E8017 /* HtmlToText.swift */; };
 		6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */; };
+		6BBE76DF2EA6274C0027FEB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */; };
+		6BBE76E42EA6305B0027FEB0 /* ZoomAndDragModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */; };
 		6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */; };
 		6BC1FB522C6E0DF600D32F27 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB512C6E0DF600D32F27 /* TapBar.swift */; };
 		6BC1FB542C6E289E00D32F27 /* SwiftuiLiveCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */; };
@@ -85,6 +87,8 @@
 		6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6BBD23D52BA25820008E8017 /* HtmlToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlToText.swift; sourceTree = "<group>"; };
 		6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDwonList.swift; sourceTree = "<group>"; };
+		6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndDragModifier.swift; sourceTree = "<group>"; };
 		6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithCricleBackgroundView.swift; sourceTree = "<group>"; };
 		6BC1FB512C6E0DF600D32F27 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
 		6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiLiveCycle.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		6B9F66AF2BB2D58A0092460A /* Commponent */ = {
 			isa = PBXGroup;
 			children = (
+				6BBE76DD2EA6272F0027FEB0 /* ZoomableAsyncImage */,
 				6B5C12B42CFDFE9400F74ED1 /* SwappableView */,
 				6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */,
 				6B699E3B2CE0DDA800146024 /* DropDownMenuListView.swift */,
@@ -212,6 +217,15 @@
 				6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */,
 			);
 			path = AppTestUITests;
+			sourceTree = "<group>";
+		};
+		6BBE76DD2EA6272F0027FEB0 /* ZoomableAsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */,
+				6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */,
+			);
+			path = ZoomableAsyncImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,12 +368,14 @@
 				6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */,
 				6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */,
 				6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */,
+				6BBE76E42EA6305B0027FEB0 /* ZoomAndDragModifier.swift in Sources */,
 				6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */,
 				6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */,
 				6B699E3E2CE20CFB00146024 /* Grid.swift in Sources */,
 				6B699E3C2CE0DDA800146024 /* DropDownMenuListView.swift in Sources */,
 				6B8564A12C63BAC4008A7B6D /* SelectableList.swift in Sources */,
 				6B5C12BA2CFEF87A00F74ED1 /* TransactionEffects.swift in Sources */,
+				6BBE76DF2EA6274C0027FEB0 /* ContentView.swift in Sources */,
 				6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */,
 				6B80804C2CE0B7E100670B7B /* ImageCarousel.swift in Sources */,
 				6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */,
