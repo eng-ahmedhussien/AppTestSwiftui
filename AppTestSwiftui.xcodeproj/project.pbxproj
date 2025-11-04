@@ -75,7 +75,9 @@
 		6BBD23C72BA257F0008E8017 /* AppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23C62BA257F0008E8017 /* AppTestUITests.swift */; };
 		6BBD23C92BA257F0008E8017 /* AppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */; };
 		6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D52BA25820008E8017 /* HtmlToText.swift */; };
-		6BBD23D92BA2FDE4008E8017 /* DropDownListSearhable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D82BA2FDE4008E8017 /* DropDownListSearhable.swift */; };
+		6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */; };
+		6BBE76DF2EA6274C0027FEB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */; };
+		6BBE76E42EA6305B0027FEB0 /* ZoomAndDragModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */; };
 		6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */; };
 		6BC115942E02E1BB0005AC9D /* logintest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC115932E02E1BB0005AC9D /* logintest.swift */; };
 		6BC1FB522C6E0DF600D32F27 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB512C6E0DF600D32F27 /* TapBar.swift */; };
@@ -185,7 +187,9 @@
 		6BBD23C62BA257F0008E8017 /* AppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITests.swift; sourceTree = "<group>"; };
 		6BBD23C82BA257F0008E8017 /* AppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6BBD23D52BA25820008E8017 /* HtmlToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlToText.swift; sourceTree = "<group>"; };
-		6BBD23D82BA2FDE4008E8017 /* DropDownListSearhable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownListSearhable.swift; sourceTree = "<group>"; };
+		6BBD23D82BA2FDE4008E8017 /* DropDwonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDwonList.swift; sourceTree = "<group>"; };
+		6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndDragModifier.swift; sourceTree = "<group>"; };
 		6BBE801E2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithCricleBackgroundView.swift; sourceTree = "<group>"; };
 		6BC115932E02E1BB0005AC9D /* logintest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logintest.swift; sourceTree = "<group>"; };
 		6BC1FB512C6E0DF600D32F27 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
@@ -398,6 +402,7 @@
 				6B2549032D88149A00C747F2 /* DynamicLanguage */,
 				6B70C0512D144FB2008C3F12 /* WaveAnimation */,
 				6B5C12BB2D006A3500F74ED1 /* TextView.swift */,
+				6BBE76DD2EA6272F0027FEB0 /* ZoomableAsyncImage */,
 				6B5C12B42CFDFE9400F74ED1 /* SwappableView */,
 				6B5AD29C2BA6D64200A1BEC7 /* CollapsibleView.swift */,
 				6BBD23D52BA25820008E8017 /* HtmlToText.swift */,
@@ -534,6 +539,13 @@
 				6BF6E6E02DB5EF3C002613AF /* TapBarView.swift */,
 			);
 			path = TapBarView;
+		6BBE76DD2EA6272F0027FEB0 /* ZoomableAsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE76E32EA6305B0027FEB0 /* ZoomAndDragModifier.swift */,
+				6BBE76DE2EA6274C0027FEB0 /* ContentView.swift */,
+			);
+			path = ZoomableAsyncImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +719,8 @@
 				6B776F472DF681C8009817F4 /* TestView.swift in Sources */,
 				6B808F112DBC7E1C00063F07 /* MapViewWithAnnotation.swift in Sources */,
 				6BBD23D92BA2FDE4008E8017 /* DropDownListSearhable.swift in Sources */,
+				6BBE76E42EA6305B0027FEB0 /* ZoomAndDragModifier.swift in Sources */,
+				6BBD23D92BA2FDE4008E8017 /* DropDwonList.swift in Sources */,
 				6B42BEE72BFB4ADF00C570AF /* NavigationLinke.swift in Sources */,
 				6B699E3E2CE20CFB00146024 /* Grid.swift in Sources */,
 				6B699E3C2CE0DDA800146024 /* DropDownMenuListView.swift in Sources */,
@@ -716,6 +730,7 @@
 				6B6198172E8285930052D4E6 /* AppButtonUsingStyle.swift in Sources */,
 				6B5C12BA2CFEF87A00F74ED1 /* TransactionEffects.swift in Sources */,
 				6B7E28872DA49DBD000DCB92 /* AppTextField.swift in Sources */,
+				6BBE76DF2EA6274C0027FEB0 /* ContentView.swift in Sources */,
 				6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */,
 				6B93DBE62DE726A700CCC296 /* Location.swift in Sources */,
 				6B1CDF292D772E29001411E0 /* PhotosPicker.swift in Sources */,
