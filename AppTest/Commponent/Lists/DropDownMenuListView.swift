@@ -8,28 +8,44 @@
 
 import SwiftUI
 
-struct AppDropDownMenuListView<T: SelectionExtendProtocol, Cell: View, Divider: View>: View {
+struct DropDownList : View {
+    
+    @State var normalDropDownData  =
+    DropDownData(dataArray: [
+        TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
+        TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
+        TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
+        TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20")
+      ])
+    
+    var body: some View {
+        AppDropDownMenuListView<TestSelectionExtendModel,
+                                TestCell>(isTapped: false,
+                                          data: $normalDropDownData,
+                                          isShowDivider: true,
+                                          isDisabled: false,
+                                          placeholderText: "Select an option",
+                                          cellProvider: { item in TestCell(model: item) })
+    }
+}
+
+enum callType {
+    case fullCall
+    case text
+}
+
+struct AppDropDownMenuListView<T: SelectionExtendProtocol, Cell: View>: View {
     
     @State var isTapped: Bool =  false
     @Binding var data: DropDownData<T>
     let isShowDivider: Bool
     var isDisabled: Bool = false
     var placeholderText: String
-    let divider: Divider
     let cellProvider: (T) -> Cell
     
     var body: some View {
         VStack{
-                Label("Add a new payment method", image: "plus")
-                    
-                    .foregroundColor(.primary)
-                    .padding(5)
-                    .frame(maxWidth: .infinity)
-                    .cardBackground(color: .white,
-                                    cornerRadius: 30,
-                                    shadowRadius: 2,
-                                    shadowColor: .gray)
-                    .padding()
+
             TitleDropDownView(selection: data.selection,
                               placeholderText: placeholderText,
                               isDisabled : isDisabled)
@@ -40,13 +56,12 @@ struct AppDropDownMenuListView<T: SelectionExtendProtocol, Cell: View, Divider: 
             .disabled(isDisabled)
             .overlay(alignment: .topLeading) {
                 VStack{
-                    Spacer(minLength: 50)
+                    //Spacer(minLength: 50)
                     if isTapped {
-                        DropDownExtendListView<T,Cell,Divider>(data: $data,
+                        DropDownExtendListView<T,Cell>(data: $data,
                                                                isShowDivider: isShowDivider,
                                                                cellProvider: cellProvider,
-                                                               isTapped: $isTapped,
-                                                               divider: divider)
+                                                               isTapped: $isTapped)
                         .transition(.scale(scale: 0.8, anchor: .top).combined(with: .opacity).combined(with: .offset(y: -10)))
                         .frame(height: 200)
                         .padding(.top, 20)
@@ -58,7 +73,7 @@ struct AppDropDownMenuListView<T: SelectionExtendProtocol, Cell: View, Divider: 
     }
 }
 
-private struct TestSelectionExtendModel: SelectionExtendProtocol {
+struct TestSelectionExtendModel: SelectionExtendProtocol {
     var id: String? = UUID().uuidString
     var name: String?
     var imageName: String?
@@ -66,7 +81,7 @@ private struct TestSelectionExtendModel: SelectionExtendProtocol {
     var amount: String?
 }
 
-private struct TestCell: View {
+struct TestCell: View {
     let model: any SelectionExtendProtocol
     var body: some View {
         HStack{
@@ -83,27 +98,9 @@ private struct TestCell: View {
     }
 }
 
-private struct TestDivider: View {
-    var body: some View {
-        Divider()
-    }
-}
 
 #Preview {
-    AppDropDownMenuListView<TestSelectionExtendModel,
-                            TestCell,
-                            TestDivider>(isTapped: false,
-                                         data: .constant(DropDownData(dataArray: [
-                                            TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
-                                            TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
-                                            TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20"),
-                                            TestSelectionExtendModel( name: "image 2", imageName: "tamara-logo-badge-en", subTitle: "sub title", amount: "20")
-                                         ])),
-                                         isShowDivider: true,
-                                         isDisabled: false,
-                                         placeholderText: "Select an option",
-                                         divider: TestDivider(),
-                                         cellProvider: { item in TestCell(model: item) })
+    DropDownList()
 }
 
 protocol SelectionExtendProtocol:  IdentifiableHashableCodable, SelectionProtocol {
@@ -113,7 +110,7 @@ protocol SelectionExtendProtocol:  IdentifiableHashableCodable, SelectionProtoco
 
 
 
-struct DropDownExtendListView<T: SelectionExtendProtocol, Cell: View, Divider: View>: View {
+struct DropDownExtendListView<T: SelectionExtendProtocol, Cell: View>: View {
     
     @State private var scrollViewContentHeight: Double = 0.0
     
@@ -125,7 +122,6 @@ struct DropDownExtendListView<T: SelectionExtendProtocol, Cell: View, Divider: V
     
     @Binding var isTapped: Bool
 
-    let divider: Divider
 
     var body: some View {
         ScrollView {
@@ -140,7 +136,7 @@ struct DropDownExtendListView<T: SelectionExtendProtocol, Cell: View, Divider: V
                             isTapped = false
                         }
                     if isShowDivider && item.id != data.dataArray.last?.id  {
-                        divider
+                        Divider()
                     }
                 }
             }

@@ -1,5 +1,24 @@
 {
+  "originHash" : "519b12a5a10123bfb648996cf11a3a3870808e0c43d740e19b104d3dab1d45b3",
   "pins" : [
+    {
+      "identity" : "advancedlist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chris-swift-dev/AdvancedList",
+      "state" : {
+        "revision" : "a1d3dad7fa5f7cb5967307bd083a656cf6d598af",
+        "version" : "8.0.0"
+      }
+    },
+    {
+      "identity" : "listpagination",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/crelies/ListPagination",
+      "state" : {
+        "revision" : "af667b368a10512da79605b61698d53c11d24cbf",
+        "version" : "0.1.1"
+      }
+    },
     {
       "identity" : "navigattie?tab=readme-ov-file",
       "kind" : "remoteSourceControl",
@@ -8,7 +27,25 @@
         "revision" : "214a9fb96ee859216083b8f3bc59a0ba95f67449",
         "version" : "0.4.0"
       }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "cac9a55a3ae92478a2c95042dcc8d9695d2129ca",
+        "version" : "5.21.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "53573d6dd017e354c0e7d8f1c86b77ef1383c996",
+        "version" : "2.2.7"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

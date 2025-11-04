@@ -10,7 +10,7 @@
 import SwiftUI
 import MijickNavigattie
 
-struct ContentView2: NavigatableView {
+struct DropDownListSearhable: NavigatableView {
     
     struct TestSelectionModel: SelectionProtocol {
         var id: String?
@@ -26,11 +26,13 @@ struct ContentView2: NavigatableView {
         TestSelectionModel(id: "4", name: "Four"),
         TestSelectionModel(id: "4", name: "Four")
     ])
-   
-    @State var se  = ""
+
     
     var body: some View {
-        DropDwonList(data: $normalDropDownData, style: .default, selectionClouser: { selection in
+        DropDwonList(data: $normalDropDownData,
+                     style: .default,
+                     selectionClouser: {
+            selection in
             // selection
             let  _ = print("\(normalDropDownData.selection?.name ?? "nill ")")
         })
@@ -38,7 +40,7 @@ struct ContentView2: NavigatableView {
 }
 
 #Preview {
-    ContentView2()
+    DropDownListSearhable()
         .preferredColorScheme(.light)
         .frame(width: 280, height: 350)
         .padding()
@@ -50,6 +52,7 @@ struct DropDwonList<T: SelectionProtocol>: View  {
     
     @State var isPicking = false
     @Binding var data: DropDownData<T>
+    @State var searchText : String = ""
     var selectionClouser: (T) -> Void
     let style: DropDownStyle
     
@@ -61,6 +64,16 @@ struct DropDwonList<T: SelectionProtocol>: View  {
     }
     private var dataCount : Int{
         data.dataArray.count
+    }
+    
+    var filteredData: [T] {
+        if searchText.isEmpty {
+            return data.dataArray
+        } else {
+            return data.dataArray.filter {
+                $0.name?.contains(searchText) ?? false
+            }
+        }
     }
     
     init(data: Binding<DropDownData<T>>, style: DropDownStyle = .default, selectionClouser: @escaping (T) -> Void) {
@@ -90,13 +103,15 @@ struct DropDwonList<T: SelectionProtocol>: View  {
             isPicking.toggle()
         }
         // Picker
-        .overlay(alignment: .topLeading) {
+        .overlay(alignment: .top) {
             VStack {
                 if isPicking {
                     Spacer(minLength: styleConfig.buttonHeight)
                     ScrollView {
+                        
                         VStack(spacing: 0) {
-                            ForEach(data.dataArray, id: \.self) { item in
+                            searchField
+                            ForEach(filteredData, id: \.self) { item in
                                 //Divider()
                                 Button {
                                     data.selection = item
@@ -129,19 +144,38 @@ struct DropDwonList<T: SelectionProtocol>: View  {
                         RoundedRectangle(cornerRadius: styleConfig.buttonCornerRadius)
                             .stroke(styleConfig.buttonStrokeColor, lineWidth: 0.6)
                     )
-                    .transition(.scale(scale: 0.8, anchor: .top).combined(with: .opacity).combined(with: .offset(y: -10)))
+                    .transition(.move(edge: .top).combined(with: .offset(y: 200)).combined(with: .opacity))
                 }
             }
         
         }
         .padding(.horizontal, 12)
         .font(.custom("RetroComputer", size: 13))
-        .animation(.easeIn(duration: 0.12), value: isPicking)
+        .animation(.smooth, value: isPicking)
         .zIndex(1)
     }
+    
+    var searchField: some View {
+        
+        VStack{
+            TextField(
+                "search",
+                text: $searchText
+            )
+            .frame(height: 10)
+            .padding()
+            
+            Divider()
+        }
+         
+        
+//                AppTextField(data: $searchText, placeholderText: "Search".localized(), leadingView: {Image("searchGray")})
+//                .appFont(.subheadline)
+//                .dismissKeyboard(on: [.tap])
+//                .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 20))
+
+        }
 }
-
-
 
 
 protocol IdentifiableHashableCodable: Identifiable, Hashable, Codable {}
@@ -168,6 +202,7 @@ enum DropDownImageType {
     case systemImage
     case assetImage
 }
+
 struct DropDownData<T: SelectionProtocol> {
     var dataArray: [T]
     var selection: T?

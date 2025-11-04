@@ -10,21 +10,14 @@ import MijickNavigattie
 
 @main
 struct AppTestApp: App {
+    @StateObject private var locationManager = LocationManager()
+    
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            //NavigationLinke()
-            ContentView5()
-              //  .implementNavigationView(config: nil)
-               // .implementNavigationView(config: navigationConfig)
+            RateUsButton()
         }
     }
 }
 
-//private extension AppTestApp {
-//    var navigationConfig: NavigationGlobalConfig {
-//        let config = NavigationGlobalConfig()
-//        config.backgroundColour = .red
-//        return config
-//    }
-//}
+
+

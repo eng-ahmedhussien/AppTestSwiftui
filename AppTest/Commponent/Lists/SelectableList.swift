@@ -39,6 +39,10 @@ struct IdentifiableItem: Identifiable {
     ContentView()
 })
 
+#Preview(body: {
+    ContentView1()
+})
+
 struct ContentView1: View {
     @State private var selectedIds: [UUID] = []
     private let items: [Item] = [
@@ -98,6 +102,7 @@ struct Selectables<Data, ID: Hashable, Content>: View where Content: View {
                 }
             ))
         }
+        
     }
 }
 

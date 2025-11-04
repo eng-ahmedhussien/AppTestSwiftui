@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  AppTestSwiftui
+
+  Created by ahmed hussien on 17/03/2025.
+  
+*/
+"home" = "Home";
+"settings" = "Settings";
+"progress" = "Progress";
+"add.words" = "Add Words";

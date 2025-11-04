@@ -30,10 +30,10 @@ struct showView: NavigatableView{
 //                    .padding()
 //                    .background(Color.yellow)
 //            })
-//          
-//
-//            // Add more CollapsibleViews as needed
-//        }
+          
+
+            // Add more CollapsibleViews as needed
+       // }
     }
 }
 
@@ -173,7 +173,7 @@ struct CollapsibleView: View {
                             .cornerRadius(10)
                     }
                 }
-                .transition(.move(edge: .top)) // Smooth transition
+               // .transition(.move(edge: .top).combined(with: .offset(y: 250))) // Smooth transition
                 .padding(.top, 16)
             }
         }

@@ -21,10 +21,16 @@ struct ImageWithCricleBackgroundView: View {
             color
                 .clipShape(Circle())
                 .frame(width: imageWidth, height: imageHeight)
+            
             Image(systemName: "square.and.arrow.up.circle.fill")
+                .resizable()
                 .scaledToFill()
+                .frame(width: imageWidth - 30, height: imageHeight - 30)
                 .padding(5)
+                .foregroundStyle(.white)
+        
         }
+        
         .onTapGesture {
             onClick()
         } 
@@ -33,8 +39,9 @@ struct ImageWithCricleBackgroundView: View {
 }
 
 #Preview {
-    ImageWithCricleBackgroundView(color: .gray,
-                                  imageHeight: 40,
-                                  imageWidth: 40,
+    ImageWithCricleBackgroundView(color: .blue,
+                                  imageHeight: 100,
+                                  imageWidth: 100,
                                   onClick: {})
 }
+
