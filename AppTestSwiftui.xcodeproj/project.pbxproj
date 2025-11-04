@@ -80,6 +80,7 @@
 		6BC115942E02E1BB0005AC9D /* logintest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC115932E02E1BB0005AC9D /* logintest.swift */; };
 		6BC1FB522C6E0DF600D32F27 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB512C6E0DF600D32F27 /* TapBar.swift */; };
 		6BC1FB542C6E289E00D32F27 /* SwiftuiLiveCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */; };
+		6BC302622EBA168C00031928 /* ZoomAndDragModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC302612EBA168C00031928 /* ZoomAndDragModifier.swift */; };
 		6BC3AE762CCAE3F3006F1DD0 /* peoductlabelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AE752CCAE3F3006F1DD0 /* peoductlabelsTest.swift */; };
 		6BC3AE782CCF7FD1006F1DD0 /* imageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AE772CCF7FD1006F1DD0 /* imageSize.swift */; };
 		6BCFA31E2D491ACD00501199 /* TagCloudLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCFA31D2D491ACD00501199 /* TagCloudLayout.swift */; };
@@ -190,6 +191,7 @@
 		6BC115932E02E1BB0005AC9D /* logintest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logintest.swift; sourceTree = "<group>"; };
 		6BC1FB512C6E0DF600D32F27 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
 		6BC1FB532C6E289E00D32F27 /* SwiftuiLiveCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiLiveCycle.swift; sourceTree = "<group>"; };
+		6BC302612EBA168C00031928 /* ZoomAndDragModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndDragModifier.swift; sourceTree = "<group>"; };
 		6BC3AE752CCAE3F3006F1DD0 /* peoductlabelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peoductlabelsTest.swift; sourceTree = "<group>"; };
 		6BC3AE772CCF7FD1006F1DD0 /* imageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSize.swift; sourceTree = "<group>"; };
 		6BCFA31D2D491ACD00501199 /* TagCloudLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudLayout.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 		6B9F66AF2BB2D58A0092460A /* Commponent */ = {
 			isa = PBXGroup;
 			children = (
+				6BC302612EBA168C00031928 /* ZoomAndDragModifier.swift */,
 				6B76BA882E4B5F370075BD7A /* New Group */,
 				6B9A9E052E49E8CE007FF2FC /* RateUsButton.swift */,
 				6B51BC662DEA7CA5006822A6 /* Fonts */,
@@ -685,6 +688,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B93DBE82DE7333600CCC296 /* Location 2.swift in Sources */,
+				6BC302622EBA168C00031928 /* ZoomAndDragModifier.swift in Sources */,
 				6B5C12B82CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift in Sources */,
 				6B3AE0782DAEB08700AC0F57 /* CircularLoaderView.swift in Sources */,
 				6B2384AE2DB8F87600F2D41E /* LocationManager.swift in Sources */,
