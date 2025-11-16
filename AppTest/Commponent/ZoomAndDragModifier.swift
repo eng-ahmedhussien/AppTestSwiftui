@@ -13,7 +13,7 @@
 //  Created by dbs on 20/10/2025.
 //
 
-
+import SwiftUI
 
 struct ZoomAndDragModifier: ViewModifier {
     // Scaling

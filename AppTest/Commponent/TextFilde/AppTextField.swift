@@ -126,7 +126,6 @@ struct AppTextField: View {
     
     //MARK: TextField
     @ViewBuilder private var textField: some View {
-      
         if isSecure && !showPassword {
             SecureField(placeholderText, text: $text)
         } else {
@@ -135,23 +134,18 @@ struct AppTextField: View {
         }
     }
     
-    private func bottomLabel(text: String) -> some View {
+    @ViewBuilder private func bottomLabel(text: String) -> some View {
         if !text.isEmpty {
-            return Text(text)
+            Text(text)
                 .font(.subheadline)
                 .foregroundColor(.red)
                 .padding(.horizontal, 16)
         } else {
-            return EmptyView()
+            EmptyView()
         }
     }
     
-    
-    
-
 }
-
-
 
 extension AppTextField {
     func validate(text: String) {
@@ -294,5 +288,3 @@ extension AppTextField {
       // data.state = .normal
    }
 }
-
-
