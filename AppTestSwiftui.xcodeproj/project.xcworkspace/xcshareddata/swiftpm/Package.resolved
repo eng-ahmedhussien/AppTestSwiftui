@@ -1,5 +1,5 @@
 {
-  "originHash" : "519b12a5a10123bfb648996cf11a3a3870808e0c43d740e19b104d3dab1d45b3",
+  "originHash" : "08396e4adb7bdeaeb9a6b80c59f4980c6ac83858e51e4a0b2e97d7412207ab7a",
   "pins" : [
     {
       "identity" : "advancedlist",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "214a9fb96ee859216083b8f3bc59a0ba95f67449",
         "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "popups",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mijick/Popups",
+      "state" : {
+        "revision" : "60ebc93bbcf06d78b0123389e641c3a451c80f65",
+        "version" : "2.7.1"
       }
     },
     {

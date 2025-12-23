@@ -14,7 +14,7 @@ struct AppTestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RateUsButton()
+            AttachmentUploadView()
         }
     }
 }

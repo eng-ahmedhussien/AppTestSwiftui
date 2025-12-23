@@ -124,8 +124,8 @@ struct peoductlabelsTest: View {
 extension View {
     func cardBackground(color: Color = Color.white,
                         cornerRadius: CGFloat = 10,
-                        shadowRadius: CGFloat = 0,
-                        shadowColor: Color = Color.clear,
+                        shadowRadius: CGFloat = 3,
+                        shadowColor: Color = Color.black.opacity(0.06),
                         shadowX: CGFloat = 0,
                         shadowY: CGFloat = 0) -> some View {
         modifier(CardBackground(color: color,
