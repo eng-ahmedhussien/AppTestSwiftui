@@ -1,3 +1,11 @@
+//
+//  CashTextFieldValidator.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 import SwiftUI
 // MARK: - Preset Configurations
 extension VFCashTextFieldConfig {
@@ -9,7 +17,7 @@ extension VFCashTextFieldConfig {
         config.allowedCharacterSet = .decimalDigits
         config.textFont = CashPinConstants.Fonts.cashTextFieldFont
         config.placeholderFont = CashPinConstants.Fonts.cashTextFieldFont
-        config.secureErrorTextFont = Font(UIFont.VFEFont(ofSize: 12, weight: .regular))
+        config.secureErrorTextFont = Font.system(size: 12, weight: .regular)
         return config
     }
     
@@ -42,13 +50,13 @@ struct CashTextFieldValidator {
     // MARK: - PIN Code Validation
     static func validatePinCode(_ pinCode: String) -> String? {
         if pinCode.count != 6 || pinCode.isEmpty{
-            return "invalid pin code, should be 6 digits".localize()
+            return NSLocalizedString("invalid pin code, should be 6 digits", comment: "")
         }
         if isConsecutive(pinCode) {
-            return "PIN code cannot contain consecutive digits (123456)".localize()
+            return NSLocalizedString("PIN code cannot contain consecutive digits (123456)", comment: "")
         }
         if isAllSame(pinCode) {
-            return "PIN code cannot contain all same digits (111111)".localize()
+            return NSLocalizedString("PIN code cannot contain all same digits (111111)", comment: "")
         }
         return nil
     }
@@ -56,7 +64,7 @@ struct CashTextFieldValidator {
     // MARK: - PIN Code Match Validation
     static func validatePinCodeMatch(_ pin1: String, _ pin2: String) -> String? {
         if pin1 != pin2 {
-            return "confirm pin code don't match pin code".localize()
+            return NSLocalizedString("confirm pin code don't match pin code", comment: "")
         }
         if pin2.isEmpty {
             return ""
@@ -67,7 +75,7 @@ struct CashTextFieldValidator {
     // MARK: - Verification Code Validation
     static func validateVerificationCode(_ code: String) -> String? {
         if code.isEmpty {
-            return "invalid verification code, should not be empty".localize()
+            return NSLocalizedString("invalid verification code, should not be empty", comment: "")
         }
         return nil
     }
@@ -81,7 +89,7 @@ struct CashTextFieldValidator {
     // MARK: - National ID Validation
     static func validateNationalId(_ nationalId: String) -> String? {
         if nationalId.count != 14 {
-            return "invalid national ID, should be 14 digits".localize()
+            return NSLocalizedString("invalid national ID, should be 14 digits", comment: "")
         }
         return nil
     }
@@ -107,3 +115,4 @@ struct CashTextFieldValidator {
         return inputString.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
     }
 }
+

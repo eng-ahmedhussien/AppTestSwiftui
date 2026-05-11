@@ -7,35 +7,61 @@
 
 import SwiftUI
 
-struct VCNRevampScreen: View {
+struct VCNMainPageScreen: View {
+    let model = VCNNavigationCardModel()
+    // MARK: - Body
     var body: some View {
-        ScrollView{
-            LazyVStack{
+        VStack{
+            ZStack{
+                Image("AppIconeLight")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
                 
+                VStack{
+                    Text("tetst card")
+                }
             }
+            .appCard()
+            
+            Spacer()
+            
+            VStack{
+                Text("tetst card")
+                
+            }.background {
+                Image("AppIconeLight")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .appCard()
+            }
+            
+            Spacer()
+ 
         }
-    }
-}
-
-extension VCNRevampScreen{
-    func setupHeaderView(vcnMainPageViewModel:VCNMainPageContentModel){
-        guard let background = vcnMainPageViewModel.backgroundImgUrl else {
-            hideHeaderView()
-            return
-        }
-        
-        self.VCNImageView.setContentImage(named:background, imagePathUrl: Constants.imagePathUrl())
     }
     
-    private func hideHeaderView() {
-        self.VCNImageView.isHidden = true
-        self.VCNImageView.snp.makeConstraints { make in
-            make.height.equalTo(0)
-        }
-        self.view.layoutIfNeeded()
+    private var backgroundImgeContentMode: UIView.ContentMode {
+        model.cardStyle == .multiUse ?   .scaleAspectFit :   .scaleToFill
     }
+    
 }
 
 #Preview {
-    VCNRevampScreen()
+    VCNMainPageScreen()
+}
+
+enum VCNNavigationCardStyle {
+    case multiUse
+    case singleUse
+}
+
+struct VCNNavigationCardModel {
+    var title: String?
+    var desc: String?
+    var backgroundImgUrl: String?
+    var btnTitle: String?
+    var action: (() -> Void)?
+    var cardStyle: VCNNavigationCardStyle = .singleUse
 }

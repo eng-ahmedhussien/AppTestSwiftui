@@ -1,5 +1,12 @@
+//
+//  VFPagger.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 import SwiftUI
-import VFEAssets
 
 public struct VFPagger: View {
     // MARK: - Properties
@@ -15,9 +22,9 @@ public struct VFPagger: View {
     /// The space between dots
     var spacing: CGFloat = 4
     /// The color of all the unselected dots
-    var dotColor: Color = .VFENeutral4
+    var dotColor: Color = .gray
     ///The color of the currently selected dot
-    var selectedColor: Color = .VFEPrimary
+    var selectedColor: Color = .blue
     /// The duration, in seconds, of the dot slide animation
     var slideDuration: Double = 0.15
     
@@ -47,8 +54,8 @@ public struct VFPagger: View {
                 centerDots: Int = 3,
                 dotSize: CGFloat = 6,
                 spacing: CGFloat = 4,
-                dotColor: Color = .VFENeutral4,
-                selectedColor: Color = .VFEPrimary,
+                dotColor: Color = .gray,
+                selectedColor: Color = .blue,
                 slideDuration: Double = 0.15) {
         self.pages = pages
         self.selectedPage = selectedPage

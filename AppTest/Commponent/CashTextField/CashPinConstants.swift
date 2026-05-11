@@ -5,10 +5,7 @@
 //  Created by Vodafone on 04/02/2026.
 //
 
-
-
 import SwiftUI
-import VFEAssets
 // MARK: - Cash PIN Constants
 struct CashPinConstants {
     
@@ -24,17 +21,17 @@ struct CashPinConstants {
         static let secondaryText = Color(red: 103/255.0, green: 103/255.0, blue: 103/255.0) // Dark Gray
         static let descriptionText = Color(red: 102/255.0, green: 102/255.0, blue: 102/255.0)
         static let enabledButtonText = Color.white
-        static let VFENeutral2 = UIColor.fromHex(hexString: "#F2F2F2")
+        static let VFENeutral2 = Color(red: 242/255.0, green: 242/255.0, blue: 242/255.0)
 
     }
     
     // MARK: - Fonts
     struct Fonts {
-        static let headerTitle = Font(UIFont.VFEFont(ofSize: 18, weight: .regular))
-        static let bodyText = Font(UIFont.VFEFont(ofSize: 14, weight: .regular))
-        static let bodyTextBold = Font(UIFont.VFEFont(ofSize: 14, weight: .bold))
-        static let buttonText = Font(UIFont.VFEFont(ofSize: 15, weight: .regular))
-        static let cashTextFieldFont = Font(UIFont.VFEFont(ofSize: 16, weight: .regular))
+        static let headerTitle = Font.system(size: 18, weight: .regular)
+        static let bodyText = Font.system(size: 14, weight: .regular)
+        static let bodyTextBold = Font.system(size: 14, weight: .bold)
+        static let buttonText = Font.system(size: 15, weight: .regular)
+        static let cashTextFieldFont = Font.system(size: 16, weight: .regular)
     }
     
     // MARK: - Spacing & Dimensions
@@ -112,3 +109,4 @@ struct CashPinConstants {
         }
     }
 }
+

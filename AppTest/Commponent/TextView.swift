@@ -27,6 +27,7 @@ struct ContentView5: View {
                     .frame(height: 20) // Increase TextField height directly
                     .padding(.horizontal)
             }
+            .padding()
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray))
             .padding()
             

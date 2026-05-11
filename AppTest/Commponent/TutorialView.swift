@@ -1,3 +1,11 @@
+//
+//  TutorialModel.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 11/05/2026.
+//
+
+
 import SwiftUI
 
 // MARK: - Models

@@ -1,3 +1,11 @@
+//
+//  Array+Extension.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 
 extension Array {
      func chunked(into size: Int) -> [[Element]] {

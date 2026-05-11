@@ -1,3 +1,11 @@
+//
+//  AppShimmerModifier.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 08/02/2026.
+//
+
+
 import SwiftUI
 
 struct AppShimmerModifier: ViewModifier {
@@ -83,9 +91,24 @@ extension View {
     /// - Smooth linear gradient animation
     /// - Configurable duration (1.5 seconds by default)
     /// - Automatic repeat forever animation
-    /// - Uses VFE design system colors
     /// - Rounded corners for polished appearance
     public func AppShimmering(on: Binding<Bool>, customShimmerColors: [Color]? = nil) -> some View {
         self.modifier(AppShimmerModifier(on: on, customShimmerColors: customShimmerColors))
     }
+}
+
+#Preview {
+    @State var isLoading: Bool = true
+    VStack{
+
+        // Image from URL
+        VFImage(url: URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWBC6C3Zj0P61_H8gT5lhbJDmQTNpSLW4Ow&s")!,
+                placeholder: "empty-credit-cards",
+                width: 200,
+                height: 200)
+
+    }
+    .AppShimmering(on: $isLoading)
+    //.redacted(reason: .placeholder)
+    
 }

@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import VFESwiftUIModels
+
 
 public struct VFTextFeild: View {
     @FocusState private var isFocused
@@ -82,7 +82,7 @@ public struct VFTextFeild: View {
             .frame(minHeight: constants.initialHeight)
             .background(
                 RoundedRectangle(cornerRadius: constants.cornerRadius)
-                    .fill(Color.VFESurface)
+                    .fill(.background)
                     .overlay(
                         RoundedRectangle(cornerRadius: constants.cornerRadius)
                             .stroke(state.colorModel.outlineColor, lineWidth: state.outlineWidth)
@@ -123,7 +123,7 @@ public struct VFTextFeild: View {
                     Spacer()
                 }
                 .padding(.horizontal, constants.errorLabelPadding)
-                .automationIdLeaf(VFTextFeildAutomationId.ErrorIcon.rawValue)
+//                .automationIdLeaf(VFTextFeildAutomationId.ErrorIcon.rawValue)
             }
         }
     }
@@ -136,7 +136,7 @@ public struct VFTextFeild: View {
             .scaleEffect(floatingLabelStyle.scale, anchor: .leading) /// Shrink placeholder
             .padding(.horizontal, constants.defaultPadding)
             .animation(.linear(duration: constants.animationDuration), value: state)
-            .automationIdLeaf(VFTextFeildAutomationId.FloatingLabel.rawValue)
+//            .automationIdLeaf(VFTextFeildAutomationId.FloatingLabel.rawValue)
     }
     
     private var normalLabel: some View {
@@ -150,7 +150,7 @@ public struct VFTextFeild: View {
                     .animation(.linear(duration: constants.animationDuration), value: state)
             }
         }
-        .automationIdLeaf(VFTextFeildAutomationId.normalLabel.rawValue)
+       // .automationIdLeaf(VFTextFeildAutomationId.normalLabel.rawValue)
     }
     
     private var textFeild: some View {
@@ -205,7 +205,7 @@ public struct VFTextFeild: View {
                     .foregroundColor(constants.iconForegroundColor)
                     .padding(.trailing, constants.iconTraling)
             })
-            .automationIdLeaf(VFTextFeildAutomationId.TrailingIcon.rawValue)
+           // .automationIdLeaf(VFTextFeildAutomationId.TrailingIcon.rawValue)
         }
     }
 }
@@ -218,24 +218,39 @@ public struct VFTextFeild: View {
         var body: some View {
             VStack{
                 /// How to use
-                VFTextFeild(text: $text, state: $state, floatingText: "Employee Num: 010xxxxx", normalText: "Enter your text", errorText: "error in number you entered")
+                VFTextFeild(
+                    text: $text,
+                    state: $state,
+                    floatingText: "Employee Num: 010xxxxx",
+                    normalText: "",
+                    errorText: "error in number you entered"
+                )
                 
                 Spacer()
                 
-                VFButton(title: "error") {
-                    state = .error
-                }
                 
-                VFButton(title: "disable") {
+                Button("error") {
+                    state = .error
+                }.disabled(test(text: text))
+                
+                Button( "disable") {
                     state = .disabled
                 }
                 
-                VFButton(title: "normal") {
+                Button( "normal") {
                     state = .normal
                 }
                 
             }
             .padding()
+        }
+    }
+    
+    func test(text : String)-> Bool{
+        if text == "a"{
+           return false
+        }else{
+            return true
         }
     }
     

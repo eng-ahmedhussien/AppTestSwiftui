@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Card view with background
+//MARK: - 1️⃣ Approtch create view
 public struct AppCard<Content: View>: View {
     var padding: CGFloat
     var backgroundColor: Color
@@ -44,18 +44,20 @@ public struct AppCard<Content: View>: View {
     }
 }
 
-//struct AppCard2: ViewModifier {
-//    func body(content: Content) -> some View {
-//        content
-//            .padding(10)
-//            .background(
-//                RoundedRectangle(cornerRadius: 12, style: .continuous)
-//                    .fill(Color(.systemBackground))
-//                    .shadow(color: .black.opacity(0.15), radius: 6, x: 0, y: 2)
-//            )
-//    }
-//}
+//MARK: - 2️⃣ Approtch use modifier
+struct AppCard2: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(10)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(Color(.systemBackground))
+                    .shadow(color: .black.opacity(0.15), radius: 6, x: 0, y: 2)
+            )
+    }
+}
 
+//MARK: - 3️⃣ Approtch extent view
 extension View {
     func appCard(
         padding: CGFloat = 10,
@@ -79,7 +81,7 @@ extension View {
     VStack{
         AppCard{
             VStack{
-                    Text("SwiftUI Card")
+                    Text("SwiftUI Card view ")
                         .font(.title)
                         .foregroundColor(.blue)
                     Divider()
@@ -91,7 +93,19 @@ extension View {
         .padding()
         
         VStack{
-            Text("SwiftUI Card")
+            Text("SwiftUI Card modifier")
+                .font(.title)
+                .foregroundColor(.blue)
+            Divider()
+            Text("Reusable component with background")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+        }
+        .modifier(AppCard2())
+        .padding()
+        
+        VStack{
+            Text("SwiftUI Card EX view")
                 .font(.title)
                 .foregroundColor(.blue)
             Divider()

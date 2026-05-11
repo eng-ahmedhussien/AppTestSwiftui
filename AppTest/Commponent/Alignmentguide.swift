@@ -1,4 +1,17 @@
- Text("Buy Now")
+//
+//  Alignmentguide.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 06/03/2026.
+//
+import SwiftUI
+
+struct AlignmentguideScreen: View {
+    
+    var body: some View {
+        
+        
+        Text("Buy Now")
             .padding()
             .foregroundStyle(.white)
             .background {
@@ -14,3 +27,9 @@
                         dim.width / 2
                     }
             }
+    }
+}
+
+#Preview {
+    AlignmentguideScreen()
+}

@@ -1,3 +1,12 @@
+//
+//  VFImage.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 08/02/2026.
+//
+
+import Kingfisher
+import SwiftUI
 
 /// View for static images or from network
 public struct VFImage: View {
@@ -9,23 +18,18 @@ public struct VFImage: View {
     let maxHeight: CGFloat?
     var placeholder: String?
     let contentMode: SwiftUI.ContentMode
+    var backgroundColor: Color?
+    
     
     @State private var isLoading = false
-    
-    /// Initialize image with name
-    /// - Parameters:
-    /// - name: image name
-    /// - width: image width
-    /// - maxWidth: image max width
-    /// - height: image height
-    /// - maxHeight: image max height
-    /// - contentmode: image content mode
+
     public init(name: String,
          width: CGFloat? = .none,
          maxWidth: CGFloat? = .none,
          height: CGFloat? = .none,
          maxHeight: CGFloat? = .none,
-         contentmode: SwiftUI.ContentMode = .fit)
+         contentmode: SwiftUI.ContentMode = .fit,
+                backgroundColor: Color = Color.clear)
     {
         self.name = name
         self.url = nil
@@ -34,17 +38,9 @@ public struct VFImage: View {
         self.height = height
         self.maxHeight = maxHeight
         self.contentMode = contentmode
+        self.backgroundColor = backgroundColor
     }
-    
-    /// Initialize image with URL
-    /// - Parameters:
-    ///  - url: image URL
-    ///  - placeholder: placeholder image name
-    ///  - width: image width
-    ///  - maxWidth: image max width
-    ///  - height: image height
-    ///  - maxHeight: image max height
-    ///  - contentmode: image content mode
+
     public init(url: URL,
          placeholder: String? = nil,
          width: CGFloat? = .none,
@@ -63,15 +59,6 @@ public struct VFImage: View {
         self.placeholder = placeholder
     }
     
-    /// Initialize image with string URL
-    /// - Parameters:
-    ///  - urlString: image URL in string format
-    ///  - placeholder: placeholder image name
-    ///  - width: image width
-    ///  - maxWidth: image max width
-    ///  - height: image height
-    ///  - maxHeight: image max height
-    ///  - contentmode: image content mode
     public init(urlString: String,
          placeholder: String? = nil,
          width: CGFloat? = .none,
@@ -93,7 +80,7 @@ public struct VFImage: View {
     public var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color.gray.opacity(0.1))
+                .fill(backgroundColor ?? Color.clear)
                 .frame(width: width, height: height)
             
             Group{
@@ -148,7 +135,7 @@ public struct VFImage: View {
     VStack{
  
         //Image from App Assets
-        VFImage(name: "splashLogo",width: 100, height: 100)
+        VFImage(name: "AppIconeLight",width: 100, height: 100,backgroundColor: .red)
         
         // Image from URL
         VFImage(url: URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWBC6C3Zj0P61_H8gT5lhbJDmQTNpSLW4Ow&s")!,

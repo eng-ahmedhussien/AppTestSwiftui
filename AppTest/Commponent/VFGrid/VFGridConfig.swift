@@ -1,3 +1,11 @@
+//
+//  VFGridConfig.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 import Foundation
 
 public struct VFGridConfig: Equatable, Hashable {

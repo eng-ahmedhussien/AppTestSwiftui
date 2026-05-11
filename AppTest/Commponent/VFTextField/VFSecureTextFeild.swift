@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import VFESwiftUIModels
 
 public struct VFSecureTextFeild: View {
     @FocusState private var isFocused
@@ -77,7 +76,7 @@ public struct VFSecureTextFeild: View {
         .frame(minHeight: constants.initialHeight)
         .background(
             RoundedRectangle(cornerRadius: constants.cornerRadius)
-                .fill(Color.VFESurface)
+                .fill(.background)
                 .overlay(
                     RoundedRectangle(cornerRadius: constants.cornerRadius)
                         .stroke(state.colorModel.outlineColor, lineWidth: state.outlineWidth)
@@ -118,7 +117,6 @@ public struct VFSecureTextFeild: View {
                     Spacer()
                 }
                 .padding(.horizontal, constants.errorLabelPadding)
-                .automationIdLeaf(VFTextFeildAutomationId.ErrorIcon.rawValue)
             }
         }
     }
@@ -131,7 +129,6 @@ public struct VFSecureTextFeild: View {
             .scaleEffect(floatingLabelStyle.scale, anchor: .leading) /// Shrink placeholder
             .padding(.horizontal, constants.defaultPadding)
             .animation(.linear(duration: constants.animationDuration), value: state)
-            .automationIdLeaf(VFTextFeildAutomationId.FloatingLabel.rawValue)
     }
     
     private var normalLabel: some View {
@@ -145,7 +142,6 @@ public struct VFSecureTextFeild: View {
                     .animation(.linear(duration: constants.animationDuration), value: state)
             }
         }
-        .automationIdLeaf(VFTextFeildAutomationId.normalLabel.rawValue)
     }
     
     private var secureTextFeild: some View {
@@ -196,7 +192,6 @@ public struct VFSecureTextFeild: View {
                     .foregroundColor(constants.iconForegroundColor)
                     .padding(.trailing, constants.iconTraling)
             })
-            .automationIdLeaf(VFTextFeildAutomationId.TrailingIcon.rawValue)
         }
     }
 }
@@ -217,15 +212,15 @@ public struct VFSecureTextFeild: View {
                 
                 Spacer()
                 
-                VFButton(title: "error") {
+                Button( "error") {
                     state = .error
                 }
                 
-                VFButton(title: "disable") {
+                Button( "disable") {
                     state = .disabled
                 }
                 
-                VFButton(title: "normal") {
+                Button( "normal") {
                     state = .normal
                 }
                 

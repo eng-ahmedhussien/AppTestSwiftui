@@ -8,28 +8,28 @@
 
 //import SwiftUI
 //
-//struct SavedPopup: View {
-//    var body: some View {
-//            VStack(spacing: 12) {
-//                Image(systemName: "checkmark")
-//                    .font(.system(size: 30, weight: .bold))
-//                    .foregroundColor(.black)
-//                
-//                Text("Saved")
-//                    .font(.custom("Cairo", fixedSize: 20))
-//                    //.font(.body)
-//                    .bold()
-//                    .foregroundColor(.black)
-//            }
-//            .padding(50)
-//            .background(.ultraThinMaterial) // For blur effect
-//            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-//    }
-//}
-//
-//#Preview {
-//    SavedPopup()
-//}
+struct SavedPopup: View {
+    var body: some View {
+            VStack(spacing: 12) {
+                Image(systemName: "checkmark")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.black)
+                
+                Text("Saved")
+                    .font(.custom("Cairo", fixedSize: 20))
+                    //.font(.body)
+                    .bold()
+                    .foregroundColor(.black)
+            }
+            .padding(50)
+            .background(.ultraThinMaterial) // For blur effect
+            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+    }
+}
+
+#Preview {
+    SavedPopup()
+}
 
 import SwiftUI
 

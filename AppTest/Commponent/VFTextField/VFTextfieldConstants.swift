@@ -1,21 +1,28 @@
+//
+//  VFTextfieldConstants.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 23/02/2026.
+//
+
+
 import SwiftUI
-import VFEAssets
 
 public struct VFTextfieldConstants {
     // MARK: - Colors
-    public static let turqoiseColor =  Color.VFESecondary
-    public static let blackColor = Color.VFEOnSurface
-    public static let lightGrayColor = Color.VFEOutline
-    public static let redColor = Color.VFEError
+    public static let turqoiseColor =  Color.accentColor
+    public static let blackColor = Color.primary
+    public static let lightGrayColor = Color.gray
+    public static let redColor = Color.red
     // MARK: - Error
     public var errorLabelColor = redColor
-    public var errorIcon: Image? = Image("Alert")
+    public var errorIcon: Image? = Image(systemName: "exclamationmark.triangle")
 
     // MARK: - Fonts
-    public var normalLableFont: Font = .VFEFont(ofSize: 18, weight: .regular)
-    public var floatingLableFont: Font = .VFEFont(ofSize: 14, weight: .regular)
-    public var textLableFont: Font = .VFEFont(ofSize: 18, weight: .regular)
-    public var errorLableFont: Font = .VFEFont(ofSize: 14, weight: .regular)
+    public var normalLableFont: Font = .system(size: 18, weight: .regular)
+    public var floatingLableFont: Font = .system(size: 14, weight: .regular)
+    public var textLableFont: Font = .system(size: 18, weight: .regular)
+    public var errorLableFont: Font = .system(size: 14, weight: .regular)
     
     public var initialHeight: CGFloat = 58
     public var animationDuration: TimeInterval = 0.15

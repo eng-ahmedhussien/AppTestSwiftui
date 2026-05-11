@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct  SecureTextField: View {
+struct  SecureTextField2: View {
     @Binding var password: String
     @State private var isPasswordVisible: Bool = false
     
@@ -43,7 +43,7 @@ struct  SecureTextField: View {
 
 // Preview for Xcode
 #Preview {
-    SecureTextField(password: .constant(""))
+    SecureTextField2(password: .constant(""))
        //.frame(width: 100)
 }
 

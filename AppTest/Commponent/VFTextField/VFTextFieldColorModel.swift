@@ -1,3 +1,11 @@
+//
+//  VFTextFieldColorModel.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 23/02/2026.
+//
+
+
 import SwiftUI
 
 public struct VFTextFieldColorModel  {

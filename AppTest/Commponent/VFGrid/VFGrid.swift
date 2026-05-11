@@ -6,9 +6,6 @@
 //
 
 import SwiftUI
-import VFEAssets
-import Kingfisher
-import VFESwiftUIModels
 
 /// A view that arranges its children in a grid layout.
 public struct VFGrid<Content: View>: View {
@@ -48,7 +45,7 @@ public struct VFGrid<Content: View>: View {
     private var grid: some View {
         switch config.scrollType {
         case .infinitePager:
-            circularPagingItems
+            Text("circularPagingItems")
         case .horizontal:
             horizontalItems
         case .vertical:
@@ -95,13 +92,13 @@ extension VFGrid {
         }
         return AnyView(pagingSingleItem)
     }
-    private var circularPagingItems: some View {
-        VFCircularPager(
-                config: config,
-                itemsCount: itemsCount,
-                content: content
-        )
-    }
+//    private var circularPagingItems: some View {
+//        VFCircularPager(
+//                config: config,
+//                itemsCount: itemsCount,
+//                content: content
+//        )
+//    }
     
     /// grid with multiple rows and columns paging
     private var pagingGridItem: some View {
@@ -217,7 +214,7 @@ extension VFGrid {
                 config: VFGridConfig(
                     scrollType: .vertical,
                     numberOfColumn: 3,
-                    numberOfRows: 2,
+                    numberOfRows: 5,
                     heightToWidthRatio: 1
                 ),
                 itemsCount: 15
@@ -303,7 +300,7 @@ extension VFGrid {
                             }
                         )
                 }
-            }.background(Color.VFEBackground)
+            }//.background(Color.red)
         }
 
     }

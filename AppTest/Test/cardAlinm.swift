@@ -1,43 +1,68 @@
-private var termsAndDetailsView: some View {
-        Button(action: {
-            self.viewModel.navigateToTermsAndDetails()
-        }) {
-            VStack{
-                VFImage(
-                    name: constants.Images.termsIcon,
-                    maxWidth: constants.Layout.maxWidthTermsImage,
-                    maxHeight: constants.Layout.maxHeightTermsImage
-                )
-                
-                VFText(constants.Texts.termsAndFAQ)
-            }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(constants.Layout.termsAndDetailsRadius)
-            .shadow(color: Color.black.opacity(constants.Layout.cardShadowOpacity), radius: constants.Layout.cardShadowRadius, x: 0, y: constants.Layout.cardShadowY)
+//
+//  cardAlinm.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 22/04/2026.
+//
+import SwiftUI
+
+struct cardAlinm: View {
+
+    var body: some View {
+        HStack(spacing: 10){
+            termsAndDetailsView
+            DeleteCardView
         }
-        .frame(maxWidth: .infinity)
+        .padding()
         
     }
     
-    private var DeleteCardView: some View {
+    private var termsAndDetailsView: some View {
         Button(action: {
-            self.showDeleteCardConfirmation()
+            print(123)
         }) {
+            
             VStack {
-                VFImage(
-                    name: constants.Images.deleteCardicon,
-                    width: constants.Layout.maxWidthTermsImage,
-                    height: constants.Layout.maxHeightTermsImage
-                )
+                Image(systemName: "square.and.arrow.up.circle")
                 
-                VFText(constants.Texts.deleteCardtitle)
+                Text("الشروط والاستفسارات والمزيد")
+                  
             }
-            .padding()
+            .frame(height: 80)
+            .frame(maxWidth: .infinity)
             .background(Color.white)
-            .cornerRadius(constants.Layout.deleteCardRadius)
-            .shadow(color: Color.black.opacity(constants.Layout.cardShadowOpacity), radius: constants.Layout.cardShadowRadius, x: 0, y: constants.Layout.cardShadowY)
-        }.frame(maxWidth: .infinity)
-        
+            .cornerRadius(12)
+            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 2)
+
+
+        }
     }
-    
+        
+        private var DeleteCardView: some View {
+            Button(action: {
+                print(123)
+            }) {
+                
+                VStack {
+                    Image(systemName: "square.and.arrow.up.circle")
+                    
+                    Text("مسح الكارد")
+                }
+                .frame(height: 80)
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+                .cornerRadius(12)
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 2)
+            }
+            
+        }
+        
+
+}
+
+#Preview {
+    cardAlinm()
+        .environment(\.layoutDirection, .rightToLeft)
+}
+
+

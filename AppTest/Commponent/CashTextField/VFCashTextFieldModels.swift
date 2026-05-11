@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import VFEAssets
 // MARK: - CashTextField Configuration Model
 public struct VFCashTextFieldConfig {
     public var placeholder: String
@@ -38,14 +37,14 @@ public struct VFCashTextFieldConfig {
         focusedBorderColor: Color = .gray.opacity(0.5),
         errorBorderColor: Color = .red,
         textColor: Color = .black,
-        textFont: Font = Font(UIFont.VFEFont(ofSize: 16, weight: .regular)),
-        placeholderFont: Font = Font(UIFont.VFEFont(ofSize: 16, weight: .regular)),
+        textFont: Font = Font.system(size: 16, weight: .regular),
+        placeholderFont: Font = Font.system(size: 16, weight: .regular),
         verticalPadding: CGFloat = 12,
         errorTextColor: Color = .red,
         errorIcon: Image? = nil,
-        errorFont: Font = Font(UIFont.VFEFont(ofSize: 12, weight: .regular)),
+        errorFont: Font = Font.system(size: 12, weight: .regular),
         errorIconSize: CGFloat = 16,
-        secureErrorTextFont: Font = Font(UIFont.VFEFont(ofSize: 12, weight: .regular)),
+        secureErrorTextFont: Font = Font.system(size: 12, weight: .regular),
         allowedCharacterSet: CharacterSet? = nil,
         placeholderColor: Color = Color(red: 201/255.0, green: 201/255.0, blue: 201/255.0)
     ) {
@@ -99,3 +98,4 @@ public enum CashTextFieldId: String {
     case errorMessage = "cash_error_message"
     case placeholderLabel = "cash_placeholder_label"
 }
+

@@ -1,3 +1,11 @@
+//
+//  SizeCalculator.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 import SwiftUI
 
 struct SizeCalculator: ViewModifier {

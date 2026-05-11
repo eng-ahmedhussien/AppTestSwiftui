@@ -4,7 +4,7 @@
 //
 //  Created by Vodafone on 16/02/2026.
 //
-
+import SwiftUI
 
 struct RoundedCorner: Shape {
 
@@ -28,6 +28,27 @@ struct SpecificCornerRadius: View {
         Rectangle()
             .foregroundColor(.blue)
             .frame(width: 300, height: 200)
-            .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
+            .padding()
+//            .background(
+//                backgroundGradient
+//            )
+            .cornerRadius(20, corners: [.topLeft, .bottomRight])
+            .shadow(
+                color: Color(.lightGray).opacity(0.8), // Color and opacity
+                radius: 0,                             // Blur radius
+                x: 0, y: 2                             // Offset
+            )
     }
+    
+    private var backgroundGradient:some View{
+        LinearGradient(
+            colors: [.red, .green],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
+}
+
+#Preview {
+    SpecificCornerRadius()
 }

@@ -6,6 +6,8 @@
 //  Copyright © 2025 Vodafone Egypt. All rights reserved.
 //
 // MARK: - Field Validation Protocol
+
+import Foundation
 enum ValidationError: LocalizedError {
     case invalidPinCode(String)
     case pinCodeMismatch(String)

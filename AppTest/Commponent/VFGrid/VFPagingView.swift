@@ -1,3 +1,11 @@
+//
+//  VFPagingView.swift
+//  AppTestSwiftui
+//
+//  Created by Vodafone on 04/02/2026.
+//
+
+
 import SwiftUI
 
 /// A view that displays a collection of views that the user can swipe through.
@@ -86,7 +94,7 @@ extension VFPagingView {
             Text("Basic Paging View (3 pages)")
                 .font(.headline)
             
-            VFPagingView(pageCount: 3, autoScrollInterval: 1.5) { index in
+            VFPagingView(pageCount: 3, autoScrollInterval: 3) { index in
                 VStack(spacing: 16) {
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color.blue.opacity(0.3))
@@ -112,6 +120,7 @@ extension VFPagingView {
                 .cornerRadius(16)
             }
             .frame(height: 200)
+            .border(.black)
         }
         
         // Example 3: Paging view without page indicator
@@ -119,10 +128,7 @@ extension VFPagingView {
             Text("Paging View without Indicator (3 pages)")
                 .font(.headline)
             
-            VFPagingView(
-                pageCount: 3,
-                pageIndicator: false
-            ) { index in
+            VFPagingView(pageCount: 3,pageIndicator: false) { index in
                 HStack(spacing: 20) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Feature \(index + 1)")
@@ -157,5 +163,4 @@ extension VFPagingView {
         Spacer()
     }
     .padding()
-    .background(Color.gray)
 }
