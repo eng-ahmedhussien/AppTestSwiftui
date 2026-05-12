@@ -82,7 +82,7 @@
 		6B9A9E062E49E8CE007FF2FC /* RateUsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A9E052E49E8CE007FF2FC /* RateUsButton.swift */; };
 		6B9F66B12BB2DD810092460A /* EnumOfShaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F66B02BB2DD810092460A /* EnumOfShaps.swift */; };
 		6BAB078D2DCC3B0400C9876F /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB078C2DCC3B0400C9876F /* AppButton.swift */; };
-		6BAC287F2DE70A22002B878A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC287E2DE70A22002B878A /* ContentView.swift */; };
+		6BAC287F2DE70A22002B878A /* NurseRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC287E2DE70A22002B878A /* NurseRequestCell.swift */; };
 		6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */; };
 		6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD23AD2BA257EE008E8017 /* TamaraView.swift */; };
 		6BBD23B02BA257EF008E8017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD23AF2BA257EF008E8017 /* Assets.xcassets */; };
@@ -112,6 +112,40 @@
 		6BF6E6E12DB5EF3C002613AF /* TapBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6E6E02DB5EF3C002613AF /* TapBarView.swift */; };
 		6BF6E6E52DB5EF66002613AF /* TapViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6E6E42DB5EF66002613AF /* TapViewEnum.swift */; };
 		6BF6E6E62DB5EF66002613AF /* TapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6E6E32DB5EF66002613AF /* TapItem.swift */; };
+		F728BC672FAB2032005A45E5 /* CartItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728BC662FAB2032005A45E5 /* CartItemRow.swift */; };
+		F76055442F336A6C00215A01 /* CashPinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760553E2F336A6C00215A01 /* CashPinConstants.swift */; };
+		F76055452F336A6C00215A01 /* CashTextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760553F2F336A6C00215A01 /* CashTextFieldValidator.swift */; };
+		F76055462F336A6C00215A01 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055402F336A6C00215A01 /* FieldValidator.swift */; };
+		F76055472F336A6C00215A01 /* VFCashTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055412F336A6C00215A01 /* VFCashTextField.swift */; };
+		F76055482F336A6C00215A01 /* VFCashTextFieldModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055422F336A6C00215A01 /* VFCashTextFieldModels.swift */; };
+		F760554A2F336A9800215A01 /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055492F336A9800215A01 /* AppCard.swift */; };
+		F760555C2F33805800215A01 /* VFGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760555A2F33805800215A01 /* VFGrid.swift */; };
+		F760555E2F3381AE00215A01 /* VFGridConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760555D2F3381AE00215A01 /* VFGridConfig.swift */; };
+		F76055602F3381C000215A01 /* VFGridScrollType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760555F2F3381C000215A01 /* VFGridScrollType.swift */; };
+		F76055622F3381F400215A01 /* SizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055612F3381F400215A01 /* SizeCalculator.swift */; };
+		F76055642F33823800215A01 /* AutoScrollModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055632F33823800215A01 /* AutoScrollModifier.swift */; };
+		F76055662F33828100215A01 /* VFPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055652F33828100215A01 /* VFPagingView.swift */; };
+		F76055682F3382A100215A01 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055672F3382A100215A01 /* Array+Extension.swift */; };
+		F760556A2F3383F000215A01 /* VFPagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76055692F3383F000215A01 /* VFPagger.swift */; };
+		F76056F32F39066A00215A01 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F76056F22F39066A00215A01 /* Kingfisher */; };
+		F76056F62F3906A500215A01 /* VFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76056F42F3906A500215A01 /* VFImage.swift */; };
+		F76056F82F3906A700215A01 /* AppShimmerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76056F72F3906A700215A01 /* AppShimmerModifier.swift */; };
+		F76058892F39BB8800215A01 /* VCNMainPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76058882F39BB8800215A01 /* VCNMainPageScreen.swift */; };
+		F770E7F92F6737640057985F /* RevampVCNCardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770E7F82F6737640057985F /* RevampVCNCardDetails.swift */; };
+		F770E8202F6EDF3D0057985F /* VCNCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F770E81F2F6EDF3D0057985F /* VCNCardView.swift */; };
+		F77CAF602F43009300FF69B1 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CAF5F2F43009300FF69B1 /* RoundedCorner.swift */; };
+		F77CE16C2F45A27100FF69B1 /* singleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE16B2F45A26700FF69B1 /* singleView.swift */; };
+		F77CE1D42F4C4D1F00FF69B1 /* VFSecureTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE1D12F4C4D1F00FF69B1 /* VFSecureTextFeild.swift */; };
+		F77CE1D52F4C4D1F00FF69B1 /* VFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE1D22F4C4D1F00FF69B1 /* VFTextField.swift */; };
+		F77CE1D62F4C4D1F00FF69B1 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE1D02F4C4D1F00FF69B1 /* SecureTextField.swift */; };
+		F77CE1D82F4C4D4D00FF69B1 /* VFTextFieldColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE1D72F4C4D4D00FF69B1 /* VFTextFieldColorModel.swift */; };
+		F77CE1DA2F4C4D6400FF69B1 /* VFTextfieldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77CE1D92F4C4D6400FF69B1 /* VFTextfieldConstants.swift */; };
+		F78545CC2F9749D6008D52C5 /* RevampVCNCardDetails 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78545CB2F9749D6008D52C5 /* RevampVCNCardDetails 2.swift */; };
+		F78545D42F98A4D4008D52C5 /* cardAlinm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78545D32F98A4D4008D52C5 /* cardAlinm.swift */; };
+		F78545DD2F98FFDF008D52C5 /* BulletedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78545DC2F98FFDF008D52C5 /* BulletedListView.swift */; };
+		F78545E12F9E3C5D008D52C5 /* VFFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78545E02F9E3C5D008D52C5 /* VFFontType.swift */; };
+		F7AB350A2F5B082600394DEE /* Alignmentguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB35092F5B082600394DEE /* Alignmentguide.swift */; };
+		F7BF2E8F2FB1EB660098AA56 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF2E8E2FB1EB660098AA56 /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,7 +240,7 @@
 		6BAB078C2DCC3B0400C9876F /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		6BAC25C42DE5B24F002B878A /* AppTestSwiftui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTestSwiftui.entitlements; sourceTree = "<group>"; };
 		6BAC25C52DE5B261002B878A /* AppTestSwiftui-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppTestSwiftui-Info.plist"; sourceTree = "<group>"; };
-		6BAC287E2DE70A22002B878A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BAC287E2DE70A22002B878A /* NurseRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseRequestCell.swift; sourceTree = "<group>"; };
 		6BBD23A82BA257EE008E8017 /* AppTestSwiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestSwiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD23AB2BA257EE008E8017 /* AppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestApp.swift; sourceTree = "<group>"; };
 		6BBD23AD2BA257EE008E8017 /* TamaraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaraView.swift; sourceTree = "<group>"; };
@@ -239,6 +273,39 @@
 		6BF6E6E02DB5EF3C002613AF /* TapBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarView.swift; sourceTree = "<group>"; };
 		6BF6E6E32DB5EF66002613AF /* TapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItem.swift; sourceTree = "<group>"; };
 		6BF6E6E42DB5EF66002613AF /* TapViewEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewEnum.swift; sourceTree = "<group>"; };
+		F728BC662FAB2032005A45E5 /* CartItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemRow.swift; sourceTree = "<group>"; };
+		F760553E2F336A6C00215A01 /* CashPinConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashPinConstants.swift; sourceTree = "<group>"; };
+		F760553F2F336A6C00215A01 /* CashTextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTextFieldValidator.swift; sourceTree = "<group>"; };
+		F76055402F336A6C00215A01 /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		F76055412F336A6C00215A01 /* VFCashTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFCashTextField.swift; sourceTree = "<group>"; };
+		F76055422F336A6C00215A01 /* VFCashTextFieldModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFCashTextFieldModels.swift; sourceTree = "<group>"; };
+		F76055492F336A9800215A01 /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
+		F760555A2F33805800215A01 /* VFGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFGrid.swift; sourceTree = "<group>"; };
+		F760555D2F3381AE00215A01 /* VFGridConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFGridConfig.swift; sourceTree = "<group>"; };
+		F760555F2F3381C000215A01 /* VFGridScrollType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFGridScrollType.swift; sourceTree = "<group>"; };
+		F76055612F3381F400215A01 /* SizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCalculator.swift; sourceTree = "<group>"; };
+		F76055632F33823800215A01 /* AutoScrollModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollModifier.swift; sourceTree = "<group>"; };
+		F76055652F33828100215A01 /* VFPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFPagingView.swift; sourceTree = "<group>"; };
+		F76055672F3382A100215A01 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		F76055692F3383F000215A01 /* VFPagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFPagger.swift; sourceTree = "<group>"; };
+		F76056F42F3906A500215A01 /* VFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFImage.swift; sourceTree = "<group>"; };
+		F76056F72F3906A700215A01 /* AppShimmerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShimmerModifier.swift; sourceTree = "<group>"; };
+		F76058882F39BB8800215A01 /* VCNMainPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCNMainPageScreen.swift; sourceTree = "<group>"; };
+		F770E7F82F6737640057985F /* RevampVCNCardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevampVCNCardDetails.swift; sourceTree = "<group>"; };
+		F770E81F2F6EDF3D0057985F /* VCNCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCNCardView.swift; sourceTree = "<group>"; };
+		F77CAF5F2F43009300FF69B1 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		F77CE16B2F45A26700FF69B1 /* singleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleView.swift; sourceTree = "<group>"; };
+		F77CE1D02F4C4D1F00FF69B1 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		F77CE1D12F4C4D1F00FF69B1 /* VFSecureTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFSecureTextFeild.swift; sourceTree = "<group>"; };
+		F77CE1D22F4C4D1F00FF69B1 /* VFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFTextField.swift; sourceTree = "<group>"; };
+		F77CE1D72F4C4D4D00FF69B1 /* VFTextFieldColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFTextFieldColorModel.swift; sourceTree = "<group>"; };
+		F77CE1D92F4C4D6400FF69B1 /* VFTextfieldConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFTextfieldConstants.swift; sourceTree = "<group>"; };
+		F78545CB2F9749D6008D52C5 /* RevampVCNCardDetails 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RevampVCNCardDetails 2.swift"; sourceTree = "<group>"; };
+		F78545D32F98A4D4008D52C5 /* cardAlinm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardAlinm.swift; sourceTree = "<group>"; };
+		F78545DC2F98FFDF008D52C5 /* BulletedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedListView.swift; sourceTree = "<group>"; };
+		F78545E02F9E3C5D008D52C5 /* VFFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFFontType.swift; sourceTree = "<group>"; };
+		F7AB35092F5B082600394DEE /* Alignmentguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignmentguide.swift; sourceTree = "<group>"; };
+		F7BF2E8E2FB1EB660098AA56 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -255,6 +322,7 @@
 				6B4BF3B52EE1BBEC00D41BB7 /* MijickPopupView in Frameworks */,
 				6B4754AA2DDE7DA20096D2FF /* AdvancedList in Frameworks */,
 				6B5AD2A02BA7206A00A1BEC7 /* MijickNavigattie in Frameworks */,
+				F76056F32F39066A00215A01 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +431,7 @@
 		6B4BF3BF2EE1C22100D41BB7 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				F77CAF5F2F43009300FF69B1 /* RoundedCorner.swift */,
 				6B4BF3C02EE1C23400D41BB7 /* HideIfNilOrEmpty.swift */,
 			);
 			path = Modifiers;
@@ -468,13 +537,23 @@
 		6B9F66AF2BB2D58A0092460A /* Commponent */ = {
 			isa = PBXGroup;
 			children = (
+				F7BF2E8E2FB1EB660098AA56 /* TutorialView.swift */,
+				F728BC652FAB2024005A45E5 /* ClouserInjection */,
+				F7AB35092F5B082600394DEE /* Alignmentguide.swift */,
+				F77CE1D32F4C4D1F00FF69B1 /* VFTextField */,
+				F77CE16B2F45A26700FF69B1 /* singleView.swift */,
+				F76058872F39BB5F00215A01 /* VCNTask */,
+				F76056F52F3906A500215A01 /* AppImage */,
+				F760555B2F33805800215A01 /* VFGrid */,
+				F76055492F336A9800215A01 /* AppCard.swift */,
+				F76055432F336A6C00215A01 /* CashTextField */,
 				6B4BF3B82EE1BC2000D41BB7 /* attachments */,
 				6B1A20B92ED44FA500B9A505 /* New Group 2 */,
 				6BC302612EBA168C00031928 /* ZoomAndDragModifier.swift */,
 				6B76BA882E4B5F370075BD7A /* AppImageView */,
 				6B9A9E052E49E8CE007FF2FC /* RateUsButton.swift */,
 				6B51BC662DEA7CA5006822A6 /* Fonts */,
-				6BAC287E2DE70A22002B878A /* ContentView.swift */,
+				6BAC287E2DE70A22002B878A /* NurseRequestCell.swift */,
 				6B758A992DE4548E005B66E7 /* ImageSliderview */,
 				6B4756042DDF2D940096D2FF /* WebView.swift */,
 				6B4755F22DDE88C30096D2FF /* pagenation */,
@@ -519,6 +598,7 @@
 				6BB506212DEC825A002037D4 /* AppToast */,
 				6B776F462DF681C8009817F4 /* TestView.swift */,
 				6BC115932E02E1BB0005AC9D /* logintest.swift */,
+				F770E7F82F6737640057985F /* RevampVCNCardDetails.swift */,
 			);
 			path = Commponent;
 			sourceTree = "<group>";
@@ -548,6 +628,7 @@
 		6BBD23AA2BA257EE008E8017 /* AppTest */ = {
 			isa = PBXGroup;
 			children = (
+				F78545D22F98A4BA008D52C5 /* Test */,
 				6B4BF3BF2EE1C22100D41BB7 /* Modifiers */,
 				6B9F66AF2BB2D58A0092460A /* Commponent */,
 				6B2549062D88159700C747F2 /* Localization */,
@@ -629,6 +710,82 @@
 			path = TapBarView;
 			sourceTree = "<group>";
 		};
+		F728BC652FAB2024005A45E5 /* ClouserInjection */ = {
+			isa = PBXGroup;
+			children = (
+				F728BC662FAB2032005A45E5 /* CartItemRow.swift */,
+			);
+			path = ClouserInjection;
+			sourceTree = "<group>";
+		};
+		F76055432F336A6C00215A01 /* CashTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F760553E2F336A6C00215A01 /* CashPinConstants.swift */,
+				F760553F2F336A6C00215A01 /* CashTextFieldValidator.swift */,
+				F76055402F336A6C00215A01 /* FieldValidator.swift */,
+				F76055412F336A6C00215A01 /* VFCashTextField.swift */,
+				F76055422F336A6C00215A01 /* VFCashTextFieldModels.swift */,
+			);
+			path = CashTextField;
+			sourceTree = "<group>";
+		};
+		F760555B2F33805800215A01 /* VFGrid */ = {
+			isa = PBXGroup;
+			children = (
+				F76055692F3383F000215A01 /* VFPagger.swift */,
+				F76055672F3382A100215A01 /* Array+Extension.swift */,
+				F76055652F33828100215A01 /* VFPagingView.swift */,
+				F76055632F33823800215A01 /* AutoScrollModifier.swift */,
+				F76055612F3381F400215A01 /* SizeCalculator.swift */,
+				F760555F2F3381C000215A01 /* VFGridScrollType.swift */,
+				F760555D2F3381AE00215A01 /* VFGridConfig.swift */,
+				F760555A2F33805800215A01 /* VFGrid.swift */,
+			);
+			path = VFGrid;
+			sourceTree = "<group>";
+		};
+		F76056F52F3906A500215A01 /* AppImage */ = {
+			isa = PBXGroup;
+			children = (
+				F76056F72F3906A700215A01 /* AppShimmerModifier.swift */,
+				F76056F42F3906A500215A01 /* VFImage.swift */,
+			);
+			path = AppImage;
+			sourceTree = "<group>";
+		};
+		F76058872F39BB5F00215A01 /* VCNTask */ = {
+			isa = PBXGroup;
+			children = (
+				F76058882F39BB8800215A01 /* VCNMainPageScreen.swift */,
+			);
+			path = VCNTask;
+			sourceTree = "<group>";
+		};
+		F77CE1D32F4C4D1F00FF69B1 /* VFTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F77CE1D92F4C4D6400FF69B1 /* VFTextfieldConstants.swift */,
+				F77CE1D72F4C4D4D00FF69B1 /* VFTextFieldColorModel.swift */,
+				F77CE1D02F4C4D1F00FF69B1 /* SecureTextField.swift */,
+				F77CE1D12F4C4D1F00FF69B1 /* VFSecureTextFeild.swift */,
+				F77CE1D22F4C4D1F00FF69B1 /* VFTextField.swift */,
+			);
+			path = VFTextField;
+			sourceTree = "<group>";
+		};
+		F78545D22F98A4BA008D52C5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F78545E02F9E3C5D008D52C5 /* VFFontType.swift */,
+				F78545DC2F98FFDF008D52C5 /* BulletedListView.swift */,
+				F78545D32F98A4D4008D52C5 /* cardAlinm.swift */,
+				F770E81F2F6EDF3D0057985F /* VCNCardView.swift */,
+				F78545CB2F9749D6008D52C5 /* RevampVCNCardDetails 2.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -654,6 +811,7 @@
 				6B4329E12DDDE7CF008C7162 /* SDWebImageSwiftUI */,
 				6B4754A92DDE7DA20096D2FF /* AdvancedList */,
 				6B4BF3B42EE1BBEC00D41BB7 /* MijickPopupView */,
+				F76056F22F39066A00215A01 /* Kingfisher */,
 			);
 			productName = AppTest;
 			productReference = 6BBD23A82BA257EE008E8017 /* AppTestSwiftui.app */;
@@ -733,6 +891,7 @@
 				6B4329E02DDDE7CF008C7162 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				6B4754A82DDE7DA20096D2FF /* XCRemoteSwiftPackageReference "AdvancedList" */,
 				6B4BF3B32EE1BBEC00D41BB7 /* XCRemoteSwiftPackageReference "Popups" */,
+				F76056F12F39066A00215A01 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 6BBD23A92BA257EE008E8017 /* Products */;
 			projectDirPath = "";
@@ -779,15 +938,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F770E8202F6EDF3D0057985F /* VCNCardView.swift in Sources */,
 				6B93DBE82DE7333600CCC296 /* Location 2.swift in Sources */,
 				6BC302622EBA168C00031928 /* ZoomAndDragModifier.swift in Sources */,
 				6B5C12B82CFDFFE200F74ED1 /* SwappableView_usingTransaction.swift in Sources */,
 				6B4BF3A02EDF0D1F00D41BB7 /* addFamilyMemberForm.swift in Sources */,
+				F77CE16C2F45A27100FF69B1 /* singleView.swift in Sources */,
+				F7AB350A2F5B082600394DEE /* Alignmentguide.swift in Sources */,
 				6B3AE0782DAEB08700AC0F57 /* CircularLoaderView.swift in Sources */,
+				F770E7F92F6737640057985F /* RevampVCNCardDetails.swift in Sources */,
 				6B2384AE2DB8F87600F2D41E /* LocationManager.swift in Sources */,
 				6B96B5192D0998CB00BD9AC0 /* SliderView.swift in Sources */,
 				6B4BF3BA2EE1BC8300D41BB7 /* ImagePicker.swift in Sources */,
 				6B4755F62DDE89AC0096D2FF /* NursesViewModel.swift in Sources */,
+				F76058892F39BB8800215A01 /* VCNMainPageScreen.swift in Sources */,
 				6B4BF3C12EE1C23400D41BB7 /* HideIfNilOrEmpty.swift in Sources */,
 				6B4BF3A82EE1A19900D41BB7 /* altibiform.swift in Sources */,
 				6B7E28852DA485CC000DCB92 /* FullCustomTextFilde.swift in Sources */,
@@ -796,13 +960,18 @@
 				6B15A49C2BDFB59B00C95CEA /* QuantityTextView.swift in Sources */,
 				6BBD23D62BA25820008E8017 /* HtmlToText.swift in Sources */,
 				6BBE801F2C47A0E800BF67D3 /* ImageWithCricleBackgroundView.swift in Sources */,
+				F760555E2F3381AE00215A01 /* VFGridConfig.swift in Sources */,
+				F76056F82F3906A700215A01 /* AppShimmerModifier.swift in Sources */,
 				6B4BF3C42EE1C5A200D41BB7 /* ImportingExampleView.swift in Sources */,
 				6B553F7E2DE36140004E6010 /* AppLifeCycleModifier.swift in Sources */,
 				6B4BF3A42EE0432F00D41BB7 /* gridView.swift in Sources */,
 				6B553F7F2DE36140004E6010 /* View+ReceiveTimer.swift in Sources */,
+				F76055602F3381C000215A01 /* VFGridScrollType.swift in Sources */,
+				F77CE1DA2F4C4D6400FF69B1 /* VFTextfieldConstants.swift in Sources */,
 				6B553F802DE36140004E6010 /* ACarousel.swift in Sources */,
 				6B553F812DE36140004E6010 /* ACarouselAutoScroll.swift in Sources */,
 				6B4BF3AF2EE1BA4500D41BB7 /* PopupAttachmentPicker.swift in Sources */,
+				F78545D42F98A4D4008D52C5 /* cardAlinm.swift in Sources */,
 				6B553F822DE36140004E6010 /* ACarouselViewModel.swift in Sources */,
 				6BF6E6D32DB4FD07002613AF /* LoadingView.swift in Sources */,
 				6B70C0532D144FCC008C3F12 /* CircleWaveAnimation.swift in Sources */,
@@ -821,9 +990,14 @@
 				6B6198172E8285930052D4E6 /* AppButtonUsingStyle.swift in Sources */,
 				6B5C12BA2CFEF87A00F74ED1 /* TransactionEffects.swift in Sources */,
 				6B4BF3AD2EE1B9E600D41BB7 /* FileType.swift in Sources */,
+				F760555C2F33805800215A01 /* VFGrid.swift in Sources */,
+				F728BC672FAB2032005A45E5 /* CartItemRow.swift in Sources */,
 				6B7E28872DA49DBD000DCB92 /* AppTextField.swift in Sources */,
 				6BD62F5E2BF2405F001FEAAE /* SwiftUILayoutSystem.swift in Sources */,
+				F76055642F33823800215A01 /* AutoScrollModifier.swift in Sources */,
+				F76055622F3381F400215A01 /* SizeCalculator.swift in Sources */,
 				6B93DBE62DE726A700CCC296 /* Location.swift in Sources */,
+				F77CE1D82F4C4D4D00FF69B1 /* VFTextFieldColorModel.swift in Sources */,
 				6B1CDF292D772E29001411E0 /* PhotosPicker.swift in Sources */,
 				6B70C0502D144835008C3F12 /* Waveanimation.swift in Sources */,
 				6B4BF3C72EE1CD0500D41BB7 /* AttachmentUploadView.swift in Sources */,
@@ -835,13 +1009,21 @@
 				6BCFA31E2D491ACD00501199 /* TagCloudLayout.swift in Sources */,
 				6BBD23AE2BA257EE008E8017 /* TamaraView.swift in Sources */,
 				6B4756052DDF2D940096D2FF /* WebView.swift in Sources */,
+				F77CAF602F43009300FF69B1 /* RoundedCorner.swift in Sources */,
+				F760554A2F336A9800215A01 /* AppCard.swift in Sources */,
 				6BF6E6E52DB5EF66002613AF /* TapViewEnum.swift in Sources */,
-				6BAC287F2DE70A22002B878A /* ContentView.swift in Sources */,
+				F78545CC2F9749D6008D52C5 /* RevampVCNCardDetails 2.swift in Sources */,
+				F77CE1D42F4C4D1F00FF69B1 /* VFSecureTextFeild.swift in Sources */,
+				F77CE1D52F4C4D1F00FF69B1 /* VFTextField.swift in Sources */,
+				F77CE1D62F4C4D1F00FF69B1 /* SecureTextField.swift in Sources */,
+				6BAC287F2DE70A22002B878A /* NurseRequestCell.swift in Sources */,
 				6BF6E6E62DB5EF66002613AF /* TapItem.swift in Sources */,
 				6B023A662C732B4700FA96B4 /* TimerPickerView.swift in Sources */,
 				6B1A20BB2ED44FCE00B9A505 /* famailyMembersPage.swift in Sources */,
 				6B5C12BC2D006A3500F74ED1 /* TextView.swift in Sources */,
+				F76056F62F3906A500215A01 /* VFImage.swift in Sources */,
 				6BBD23AC2BA257EE008E8017 /* AppTestApp.swift in Sources */,
+				F76055682F3382A100215A01 /* Array+Extension.swift in Sources */,
 				6B4BF3AA2EE1B9D200D41BB7 /* AddAttachmentComponent.swift in Sources */,
 				6B15A49A2BDFA81500C95CEA /* RoundedButton.swift in Sources */,
 				6B5AD29D2BA6D64300A1BEC7 /* CollapsibleView.swift in Sources */,
@@ -854,6 +1036,7 @@
 				6B2549052D8814B600C747F2 /* LocalizableManager.swift in Sources */,
 				6B4329E42DDDE8A4008C7162 /* ImageSliderview.swift in Sources */,
 				6BAB078D2DCC3B0400C9876F /* AppButton.swift in Sources */,
+				F76055662F33828100215A01 /* VFPagingView.swift in Sources */,
 				6B5C12B62CFDFEB700F74ED1 /* SwappableView_usingOffcet.swift in Sources */,
 				6B3ADEC52DA93DA500AC0F57 /* NavigationBarView.swift in Sources */,
 				6B51BC632DEA68F9006822A6 /* ButtonWithEnums.swift in Sources */,
@@ -864,14 +1047,23 @@
 				6B9F66B12BB2DD810092460A /* EnumOfShaps.swift in Sources */,
 				6B4BF3B72EE1BC0F00D41BB7 /* Base64Manager.swift in Sources */,
 				6BC3AE762CCAE3F3006F1DD0 /* peoductlabelsTest.swift in Sources */,
+				F78545E12F9E3C5D008D52C5 /* VFFontType.swift in Sources */,
 				6B9A9E062E49E8CE007FF2FC /* RateUsButton.swift in Sources */,
 				6B5293DF2DC8CDB20021C093 /* DropdownListWithObject.swift in Sources */,
+				F76055442F336A6C00215A01 /* CashPinConstants.swift in Sources */,
+				F76055452F336A6C00215A01 /* CashTextFieldValidator.swift in Sources */,
+				F76055462F336A6C00215A01 /* FieldValidator.swift in Sources */,
+				F78545DD2F98FFDF008D52C5 /* BulletedListView.swift in Sources */,
+				F76055472F336A6C00215A01 /* VFCashTextField.swift in Sources */,
+				F76055482F336A6C00215A01 /* VFCashTextFieldModels.swift in Sources */,
 				6BD0A55F2DDB1A4800DACE0E /* DeliveryDetailsPage.swift in Sources */,
+				F7BF2E8F2FB1EB660098AA56 /* TutorialView.swift in Sources */,
 				6B70C0552D14C39C008C3F12 /* VoiceView.swift in Sources */,
 				6B4755F82DDE89D80096D2FF /* NursesListView.swift in Sources */,
 				6BF6E63A2DB4EA31002613AF /* FormValidation.swift in Sources */,
 				6B3ADEC32DA93D4700AC0F57 /* NavigationBarModifier.swift in Sources */,
 				6BF6E6E12DB5EF3C002613AF /* TapBarView.swift in Sources */,
+				F760556A2F3383F000215A01 /* VFPagger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1253,6 +1445,14 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		F76056F12F39066A00215A01 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1275,6 +1475,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6B5AD29E2BA7206A00A1BEC7 /* XCRemoteSwiftPackageReference "Navigattie" */;
 			productName = MijickNavigattie;
+		};
+		F76056F22F39066A00215A01 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76056F12F39066A00215A01 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
